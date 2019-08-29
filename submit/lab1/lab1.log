@@ -1,0 +1,9 @@
+Script started on 2019-08-29 11:45:14-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="85" LINES="39"]
+rimai1@remote07:~/git-repos/i220b/work/lab1$ ls
+lab1.log
+rimai1@remote07:~/git-repos/i220b/work/lab1$ ls -l
+total 0
+-rw-r----- 1 rimai1 rimai1 0 Aug 29 11:45 lab1.log
+rimai1@remote07:~/git-repos/i220b/work/lab1$ s[Kexit
+
+Script done on 2019-08-29 11:45:45-04:00 [COMMAND_EXIT_CODE="0"]
