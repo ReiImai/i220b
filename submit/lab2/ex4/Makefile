@@ -17,7 +17,7 @@ depend:
 dist:	$(PROJECT).tar.gz
 
 
-$(PROJECT).tar.dz:	$(SRC_FILES)
+$(PROJECT).tar.gz:	$(SRC_FILES)
 			tar -cf $(PROJECT).tar $(SRC_FILES)
 			gzip -f $(PROJECT).tar
 
