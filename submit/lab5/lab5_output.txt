@@ -1,0 +1,126 @@
+ex1.
+
+char pointer cp = 0xffe0ac8b, pointing at char a
+char pointer cp = 0xffe0ac8c, pointing at char b
+char pointer cp = 0xffe0ac8d, pointing at char c
+char pointer cp = 0xffe0ac8e, pointing at char d
+char pointer cp = 0xffe0ac8f, pointing at char e
+int pointer ip = 0xffe0ac74, pointing at int 1
+int pointer ip = 0xffe0ac78, pointing at int 2
+int pointer ip = 0xffe0ac7c, pointing at int 3
+int pointer ip = 0xffe0ac80, pointing at int 4
+int pointer ip = 0xffe0ac84, pointing at int 5
+
+//int pointer increments by 4!
+//outputs are different in second time running it.
+
+---------------------------------------------------
+ex2.
+
+is[] is at 0xfffdf6dc
+enter pointer to is[1]: 0xfffdf6e0
+ok
+is[] is at 0xfffdf6dc
+enter pointer to is[3]: 0xfffdf6e8
+ok
+is[] is at 0xfffdf6dc
+enter pointer to is[2]: 0xfffdf6e4
+ok
+is[] is at 0xfffdf6dc
+enter pointer to is[4]: 0xfffdf6ec
+ok
+is[] is at 0xfffdf6dc
+enter pointer to is[0]: 0xfffdf6dc
+ok
+is[] is at 0xfffdf6dc
+enter pointer to is[3]: 0xfffdf6e8
+ok
+
+----------------------------------------------------
+ex3.
+
+char pointer cp = 0xffa592a4, pointing at char '' (0x1)
+char pointer cp = 0xffa592a5, pointing at char '' (0x0)
+char pointer cp = 0xffa592a6, pointing at char '' (0x0)
+char pointer cp = 0xffa592a7, pointing at char '' (0x0)
+char pointer cp = 0xffa592a8, pointing at char '' (0x2)
+int pointer ip = 0xffa592bb, pointing at int 1684234849 (0x64636261)
+int pointer ip = 0xffa592bf, pointing at int 357 (0x165)
+int pointer ip = 0xffa592c3, pointing at int 1280 (0x500)
+int pointer ip = 0xffa592c7, pointing at int -1517107456 (0xa592c700)
+int pointer ip = 0xffa592cb, pointing at int -1517114881 (0xa592a9ff)
+
+//pointing out the wrong object! garbage ;(
+//Do not ignore compiler warnings!!!
+
+----------------------------------------------------
+ex4.
+
+char pointer cp = 0xffe64494, pointing at int 1 (0x1)
+char pointer cp = 0xffe64498, pointing at int 2 (0x2)
+char pointer cp = 0xffe6449c, pointing at int 3 (0x3)
+char pointer cp = 0xffe644a0, pointing at int 4 (0x4)
+char pointer cp = 0xffe644a4, pointing at int 5 (0x5)
+int pointer ip = 0xffe644ab, pointing at char 'a' (0x64636261)
+int pointer ip = 0xffe644ac, pointing at char 'b' (0x65646362)
+int pointer ip = 0xffe644ad, pointing at char 'c' (0x2656463)
+int pointer ip = 0xffe644ae, pointing at char 'd' (0x36564)
+int pointer ip = 0xffe644af, pointing at char 'e' (0x465)
+
+//char(increment by 4) pointing int -> cp = (char *)(((int *)cp) + 1);
+//int(increment by 1) pointing char -> ip = (int *)(((char *)ip) + 1);
+
+----------------------------------------------------
+ex5.
+
+void pointer p = 0xffaf574f, pointing at char a
+void pointer p = 0xffaf5750, pointing at char b
+void pointer p = 0xffaf5751, pointing at char c
+void pointer p = 0xffaf5752, pointing at char d
+void pointer p = 0xffaf5753, pointing at char e
+void pointer p = 0xffaf5738, pointing at int 1
+void pointer p = 0xffaf573c, pointing at int 2
+void pointer p = 0xffaf5740, pointing at int 3
+void pointer p = 0xffaf5744, pointing at int 4
+void pointer p = 0xffaf5748, pointing at int 5
+
+//void pointers are for storage ONLY!!!!
+//must to cast a specific pointer type!!!!!
+//flexible access to both types of arrays.
+
+//pointer hex incremented by 4 for char
+//incremented by 1 for int!
+
+----------------------------------------------------
+ex6. //& means taking the address.
+
+cs[] is at 0xff91c17b; is[] is at 0xff91c164
+enter pointer to is[2]: 0xff91c16c  
+ok
+cs[] is at 0xff91c17b; is[] is at 0xff91c164
+enter pointer to cs[3]: 0xff91c17e
+ok
+cs[] is at 0xff91c17b; is[] is at 0xff91c164
+enter pointer to is[4]: 0xff91c174
+ok
+cs[] is at 0xff91c17b; is[] is at 0xff91c164
+enter pointer to cs[1]: 0xff91c17c
+ok
+cs[] is at 0xff91c17b; is[] is at 0xff91c164
+enter pointer to cs[4]: 0xff91c17f
+ok
+cs[] is at 0xff91c17b; is[] is at 0xff91c164
+enter pointer to is[1]: 0xff91c168
+ok
+
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
