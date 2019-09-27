@@ -1,0 +1,114 @@
+ex1:
+
+./process-memory 10 &
+[2] 20832
+10 MB allocated at 0x7f964df37010
+
+ps -Fp 20832
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+rimai1   20832 17254  0  3130   748   7 20:10 pts/5    00:00:00 ./process-memory 10
+
+
+//[] is the Job ID, second# is the Process ID.
+//SZ = total size of the process(in pages)
+//RSS = number of pages which are resident in memory.
+
+
+
+./process-memory 100 &
+[3] 21188
+[2]   Done                    ./process-memory 10
+100 MB allocated at 0x7fdcd8bce010
+
+
+ps -Fp 21188
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+rimai1   21188 17254  0 26170   748   7 20:12 pts/5    00:00:00 ./process-memory 100
+
+
+//SZ increased, but RSS stays the same b/c allocated memory is INACTIVE.
+
+------------------------------------------------------------------------
+ex2:
+
+./bug-program
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+
+//even with some bugs, they run without a problem!
+
+// T *pointerToT = malloc(sizeof(T));
+
+// should be free() after every malloc();
+
+------------------------------------------------------------------------
+ex3:
+
+MALLOC_CHECK_=1 ./bug-program
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+rei: 2
+brillig: 1
+twas: 0
+free(): invalid pointer
+Aborted
+
+
+//gdb fileName
+//start input(if any)
+//l = list lines
+//n = next
+//b functionName (breakpoint)
+//up or down
+//c.function() continues
+//q quit
+
+
+------------------------------------------------------------------------
+ex4:
+
+
+
+
+
+
+
