@@ -1,0 +1,131 @@
+ex1.
+
+log10.c:9: undefined reference to `log10'
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: log10] Error 1
+
+//need link to -lm in Makefile!
+
+
+fraiseexcpt.o:
+0000000000000000 T __feraiseexcept
+0000000000000000 W feraiseexcept
+                 U _GLOBAL_OFFSET_TABLE_
+0000000000000000 r .LC1
+                 U __stack_chk_fail
+
+//w = weak symbol
+
+--------------------------------------------------------------
+ex2.
+
+multiple-symbols/def1.c:1: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:4: multiple-symbols] Error 1
+
+
+//sym is defined differently, initiallizd as Strong Symbols
+//strong symbol wins over weak symbols
+
+//one of definitions can be a weak symbol(without an initializer)
+
+--------------------------------------------------------------
+ex3.
+
+in main.c, x is initiallized as int.
+in f.c x is initiallized as double.
+where int has its size 4 bytes, and double has its size 8 bytes.
+change in the size of x will affect y because they are 
+consecutively stored in memory.
+
+--------------------------------------------------------------
+ex4.
+
+-rw-r--r-- 1 rimai1 rimai1    185 Oct  3 14:59 log10.c
+-rwxr-xr-x 1 rimai1 rimai1  19264 Oct  3 16:03 log10-dynamic
+-rw-r--r-- 1 rimai1 rimai1   6064 Oct  3 16:03 log10.o
+-rwxr-xr-x 1 rimai1 rimai1 924896 Oct  3 16:03 log10-static
+-rw-r--r-- 1 rimai1 rimai1    250 Oct  3 14:59 Makefile
+
+//size of dynamically-linked executable greater than static.
+
+
+0000000000401c10 W log10 //in static
+
+00000000000011b0 T __libc_csu_init
+                 U __libc_start_main@@GLIBC_2.2.5
+                 U log10@@GLIBC_2.2.5 //in dynamic
+
+--------------------------------------------------------------
+ex5.
+
+// -fPIC = position-independence code, need for shared libraries
+// -shared = builds a shared library
+
+-rw-r--r-- 1 rimai1 rimai1    111 Oct  3 14:59 addvec.c
+-rw-r--r-- 1 rimai1 rimai1   2912 Oct  3 16:29 addvec.o
+-rw-r--r-- 1 rimai1 rimai1   6040 Oct  3 16:29 libvec.a
+-rwxr-xr-x 1 rimai1 rimai1  17368 Oct  3 16:29 libvec.so
+-rw-r--r-- 1 rimai1 rimai1    401 Oct  3 14:59 Makefile
+-rw-r--r-- 1 rimai1 rimai1    112 Oct  3 14:59 multvec.c
+-rw-r--r-- 1 rimai1 rimai1   2912 Oct  3 16:29 multvec.o
+-rw-r--r-- 1 rimai1 rimai1    644 Oct  3 14:59 testvec.c
+-rwxr-xr-x 1 rimai1 rimai1  19984 Oct  3 16:29 testvec-dynamic
+-rw-r--r-- 1 rimai1 rimai1   8032 Oct  3 16:29 testvec.o
+-rwxr-xr-x 1 rimai1 rimai1 759944 Oct  3 16:29 testvec-static
+-rw-r--r-- 1 rimai1 rimai1    163 Oct  3 14:59 vectors.h
+
+./testvec-static 1 2 3
+sum = 2 4 6 
+product = 1 4 9
+
+
+% setenv LD_LIBRARY_PATH .
+% ./testvec-dynamic 1 2 3
+
+//for dynamic using csh-based shell
+
+LD_LIBRARY_PATH=. ./testvec-dynamic 1 2 3
+
+//for dynamic using sh-based shell
+
+//ldd = list dynamic dependencies
+
+---------------------------------------------------------------
+ex6.
+
+(gdb) p &main
+$1 = (int (*)(int, const char **)) 0x401bf6 <main>
+(gdb) p &addvec
+$2 = (void (*)(int *, int *, int *, int)) 0x401f1f <addvec>
+(gdb) p &multvec
+$3 = (void (*)(int *, int *, int *, int)) 0x401f8e <multvec>
+
+//above are from testvec-static
+
+
+gdb) p &main
+$1 = (int (*)(int, const char **)) 0x5555555551ee <main>
+(gdb) p &addvec
+$2 = (void (*)(int *, int *, int *, int)) 0x7ffff7fca0f5 <addvec>
+(gdb) p &multvec
+$3 = (void (*)(int *, int *, int *, int)) 0x7ffff7fca164 <multvec>
+
+//above are from testvec-dynamic
+
+----------------------------------------------------------------
+ex7.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

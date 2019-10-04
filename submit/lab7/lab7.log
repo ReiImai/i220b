@@ -1,0 +1,149 @@
+Script started on 2019-10-03 14:59:55-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+rimai1@g7-35:~/git-repos/i220b/work/lab7$ \[Kcd lag10
+bash: cd: lag10: No such file or directory
+rimai1@g7-35:~/git-repos/i220b/work/lab7$ ls[K[Kcd [K[K[Kcd log10
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ cd 
+rimai1@g7-35:~$ cdgi[K[K git-repos/i220n[Kb/work/lab7/log10
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ ls
+log10.c  Makefile
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ gedit log10 [K.c &
+[1] 3920
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ cd ..
+rimai1@g7-35:~/git-repos/i220b/work/lab7$ ls
+lab7.log  libvec  multiple-defs     static-dynamic
+libgeom   log10   multiple-symbols
+rimai1@g7-35:~/git-repos/i220b/work/lab7$ d[Kgedit lab7_output.txt
+rimai1@g7-35:~/git-repos/i220b/work/lab7$ 
+(gedit:3920): Gtk-[1;33mWARNING[0m **: [34m15:02:06.123[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+rimai1@g7-35:~/git-repos/i220b/work/lab7$ d[Kgedit m[K[K[K[K[K[K[Klas[K[Ks[K[Kla[Ks
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+rimai1@g7-35:~/git-repos/i220b/work/lab7$ s[Kcd la[Kog2[K19[K0
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ ls[K[Kgedit Mk[Kakefile
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ man ;[Klog10
+[?1049h[22;0;0t[?1h=LOG10(3)                   Linux Programmer's Manual                  LOG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic function[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature Test Macro Requirements for glibc (see [1mfeature_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURCE || _SVID_SOURCE[m
+[m
+[1mDESCRIPTION[0m[m
+       These functions return the base 10 logarithm of [4mx[24m.[m
+[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page log10(3) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mRETURN[0m [1mVALUE[0m[m
+[7m Manual page log10(3) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       On success, these functions return the base 10 logarithm of [4mx[24m.[m
+[7m Manual page log10(3) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page log10(3) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For  special  cases,  including where [4mx[24m is 0, 1, negative, infinity, or[m
+[7m Manual page log10(3) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       NaN, see [1mlog[0m(3).[m
+[7m Manual page log10(3) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page log10(3) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mERRORS[0m[m
+[7m Manual page log10(3) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       See [1mmath_error[0m(7) for information on how to determine whether an  error[m
+[7m Manual page log10(3) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       has occurred when calling these functions.[m
+[7m Manual page log10(3) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page log10(3) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For  a discussion of the errors that can occur for these functions, see[m
+[7m Manual page log10(3) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page log10(3) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[24;1H[K[7m Manual page log10(3) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+[24;1H[K[7m Manual page log10(3) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+[24;1H[K[7m Manual page log10(3) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page log10(3) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m#include[0m [1m<math.h>[0m[m
+[24;1H[K[7m Manual page log10(3) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[24;1H[K[7m Manual page log10(3) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page log10(3) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       log10, log10f, log10l -  base-10 logarithmic function[m
+[24;1H[K[7m Manual page log10(3) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[24;1H[K[7m Manual page log10(3) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page log10(3) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMLOG10(3)                   Linux Programmer's Manual                  LOG10(3)[m
+[24;1H[K[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0trimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ make
+cc -g -Wall -std=c11   -c -o log10.o log10.c
+cc   log10.o   -o log10
+/usr/bin/ld: log10.o: in function `main':
+/home/rimai1/git-repos/i220b/work/lab7/log10/log10.c:9: undefined reference to `log10'
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: log10] Error 1
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ man lonh1[K[K[Kg01[K[K10
+[?1049h[22;0;0t[?1h=LOG10(3)                   Linux Programmer's Manual                  LOG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic function[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature Test Macro Requirements for glibc (see [1mfeature_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURCE || _SVID_SOURCE[m
+[m
+[1mDESCRIPTION[0m[m
+       These functions return the base 10 logarithm of [4mx[24m.[m
+[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0trimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ make
+cc   log10.o  -lm -o log10
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ exho[K[K[Kcho 10 1000 2 | ./log10
+log10(10) = 1
+log10(1000) = 3
+log10(2) = 0.30103
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ ls
+log10  log10.c	log10.o  Makefile
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ cd [K[K[Kls -l /usr.[K/lib/x86_64-linux-gnu- [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ku/ limb.*
+ls: cannot access '/usr/lib/x86_64-linux-gnu/limb.*': No such file or directory
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ d[Kcd 
+rimai1@g7-35:~$ cd ls -l /usr/lib/x86_64-linux-gnu/limb.*
+ls: cannot access '/usr/lib/x86_64-linux-gnu/limb.*': No such file or directory
+rimai1@g7-35:~$ ls
+a.out		 bin-c.log  dir		    i220b	   Pictures	tmp
+Arduino		 cat.lo     Documents	    lab2	   Public	v1.s
+array.asm	 cat.log    Downloads	    ls.log	   T1.s		v.c
+assembler-lab	 cs120	    git-repos	    manyHello.asm  Templates	Videos
+assembler-lab.c  cs220	    HelloWorld	    mipsAsm.asm    tinyproc2.s	x.c
+BillGates.asm	 Desktop    HelloWorld.asm  Music	   tl.c
+rimai1@g7-35:~$ xs[K[Kcd cs220
+rimai1@g7-35:~/cs220$ ls
+lab1.txt
+rimai1@g7-35:~/cs220$ cd ..
+rimai1@g7-35:~$ cd git=re[K[K[K-repos
+rimai1@g7-35:~/git-repos$ ;s
+bash: syntax error near unexpected token `;'
+rimai1@g7-35:~/git-repos$ ls
+cs220  i220b
+rimai1@g7-35:~/git-repos$ cd s[Kcs220
+rimai1@g7-35:~/git-repos/cs220$ ls
+announce.html  bin	      exercises   index.umt  misc	slides
+announce.umt   docs	      hws	  labs	     projects
+assets	       exams-quizzes  index.html  Makefile   README.md
+rimai1@g7-35:~/git-repos/cs220$ cd ..
+rimai1@g7-35:~/git-repos$ cd i220b/work.[K/ka[Kl[K[Klabs[K7
+rimai1@g7-35:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+rimai1@g7-35:~/git-repos/i220b/work/lab7$ cd log10l[K
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ ls
+log10  log10.c	log10.o  Makefile
+rimai1@g7-35:~/git-repos/i220b/work/lab7/log10$ exit
+
+Script done on 2019-10-03 15:28:08-04:00 [COMMAND_EXIT_CODE="0"]
