@@ -1,0 +1,677 @@
+Script started on 2019-10-10 15:04:41-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+rimai1@g7-34:~/git-repos/i220b/work/lab8$ cd .[K[K[K[Krm -rf *.c Makefile
+rimai1@g7-34:~/git-repos/i220b/work/lab8$ ;s
+bash: syntax error near unexpected token `;'
+rimai1@g7-34:~/git-repos/i220b/work/lab8$ ls
+lab8.log  README.md
+rimai1@g7-34:~/git-repos/i220b/work/lab8$ rm -rf *.md
+rimai1@g7-34:~/git-repos/i220b/work/lab8$ ls
+lab8.log
+rimai1@g7-34:~/git-repos/i220b/work/lab8$ cd ~/git-0[Krepos
+rimai1@g7-34:~/git-repos$ ls
+cs220  i220b
+rimai1@g7-34:~/git-repos$ mkdir lab8.git
+rimai1@g7-34:~/git-repos$ cd lab8.git
+rimai1@g7-34:~/git-repos/lab8.git$ git init --bare
+Initialized empty Git repository in /import/linux/home1/rimai1/git-repos/lab8.git/
+rimai1@g7-34:~/git-repos/lab8.git$ ds[K[K;s[K[Kls
+branches  config  description  HEAD  hooks  info  objects  refs
+rimai1@g7-34:~/git-repos/lab8.git$ cd [K[K[Kd[K.[Kcd l[K..
+rimai1@g7-34:~/git-repos$ ls[K[Kcd ..
+rimai1@g7-34:~$ ls
+a.out		 bin-c.log  dir		    i220b	   Pictures	tmp
+Arduino		 cat.lo     Documents	    lab2	   Public	v1.s
+array.asm	 cat.log    Downloads	    ls.log	   T1.s		v.c
+assembler-lab	 cs120	    git-repos	    manyHello.asm  Templates	Videos
+assembler-lab.c  cs220	    HelloWorld	    mipsAsm.asm    tinyproc2.s	x.c
+BillGates.asm	 Desktop    HelloWorld.asm  Music	   tl.c
+rimai1@g7-34:~$ cd temp[K[K[Kmp
+rimai1@g7-34:~/tmp$ ls
+rimai1@g7-34:~/tmp$ git clone/[K \d[K
+> dd[K[Kssj:[K[Kh:/[K//rimai1@bing[Kg[K[K[K[Kremote.cs.binghatmon[K[K[K[Kmton.edu/home/LOGIN/git-repos/lab8.git
+Cloning into 'lab8'...
+rimai1@remote.cs.binghamton.edu's password: 
+fatal: '/home/LOGIN/git-repos/lab8.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+rimai1@g7-34:~/tmp$ git clone ssh://rimai1@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone ssh://rimai1@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[Ki[Krimai1/ git-repos/lab8.git
+Cloning into 'lab8'...
+rimai1@remote.cs.binghamton.edu's password: 
+warning: You appear to have cloned an empty repository.
+rimai1@g7-34:~/tmp$ cd lab8
+rimai1@g7-34:~/tmp/lab8$ ls
+rimai1@g7-34:~/tmp/lab8$ git remote -v [K
+origin	ssh://rimai1@remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git (fetch)
+origin	ssh://rimai1@remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git (push)
+rimai1@g7-34:~/tmp/lab8$ la[Ks -a
+.  ..  .git
+rimai1@g7-34:~/tmp/lab8$ ls
+rimai1@g7-34:~/tmp/lab8$ sa[K[Kmkdir work/lab8[C work/lab8- work/lab8p work/lab8[C work/lab8
+rimai1@g7-34:~/tmp/lab8$ cd work/lab8
+rimai1@g7-34:~/tmp/lab8/work/lab8$ cd [K[K[Kcp ~/cs[K[Kgt[Kit-repos/cs220/labs/lab8/files/README.m d .
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m../[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git add ER[K[KREADME.md
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git status --short
+[32mA[m  README.md
+rimai1@g7-34:~/tmp/lab8/work/lab8$ gfi[K[Kit vommit[K[K[K[K[K[Kcomi[Kmit -m ""a"d"d"e"d" "R"E"A"D"M"E"
+[master (root-commit) 0153dd5] added README
+ Committer: Rei Imai <rimai1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+)
+ create mode 100644 work/lab8/README.md
+rimai1@g7-34:~/tmp/lab8/work/lab8$ v[Kgit branch -l
+[?1h=* [32mmaster[m[m
+[K[?1l>rimai1@g7-34:~/tmp/lab8/work/lab8$ git push --set-upstream origin master
+rimai1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 335 bytes | 167.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+rimai1@g7-34:~/tmp/lab8/work/lab8$ sd[K[Kgit stt[Katus -s
+rimai1@g7-34:~/tmp/lab8/work/lab8$ cpr[K ~/got-repos/cs220/labs/lab8/files/Makefile  .
+cp: cannot stat '/home/rimai1/got-repos/cs220/labs/lab8/files/Makefile': No such file or directory
+rimai1@g7-34:~/tmp/lab8/work/lab8$ cp ~/got-repos/cs220/labs/lab8/files/Makefile .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct-repos/cs220/labs/lab8/files/Makefile .[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cit-repos/cs220/labs/lab8/files/Makefile .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+rimai1@g7-34:~/tmp/lab8/work/lab8$ cp ~/git-repos/cs220/labs/lab8/files/Makefile .=[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Khello-on e.c hello.c
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ls
+hello.c  Makefile  README.md
+rimai1@g7-34:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;35m[K^~~~~~[m[K
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Khello.c:5:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdio.h>[m[K
+ int
+[01m[Khello.c:5:5:[m[K
+     [01;36m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;36m[K^~~~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kexit[m[K(1);
+     [01;35m[K^~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Khello.c:6:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdlib.h>[m[K
+ int
+[01m[Khello.c:6:5:[m[K
+     [01;36m[Kexit[m[K(1);
+     [01;36m[K^~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+   [01;35m[Kprintf[m[K("hello %s\n", argv[1]);
+   [01;35m[K^~~~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ,.[K[K./hre[K[Kelloi[K
+usage: ./hello NAME
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./heloo[K[Klo rei
+hello rei
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git status -s
+[31m??[m Makefile
+[31m??[m hello
+[31m??[m hello.c
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git status -s[2P./hello rei[K[3Pmake[2Plscp ~/git-repos/cs220/labs/lab8/files/hello-one.c hello.c[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K.gitigon [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kno re .
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git status -s
+[31m??[m .gitignore
+[31m??[m Makefile
+[31m??[m hello.c
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git s[Kada[K[Kdd .
+rimai1@g7-34:~/tmp/lab8/work/lab8$ gti[K[Kit status -s
+[32mA[m  .gitignore
+[32mA[m  Makefile
+[32mA[m  hello.c
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git commit -,[Km '[K""w"o"r"k"i"n"g" "w"i"t"h" "w"a"t"n"[1P"[1P"r"n"i"n"g"s"
+[master 355fa8e] working with warnings
+ Committer: Rei Imai <rimai1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 22 insertions(+)
+ create mode 100644 work/lab8/.gitignore
+ create mode 100644 work/lab8/Makefile
+ create mode 100644 work/lab8/hello.c
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git stats[K[Ktus -s
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git sp[K[Kpush
+rimai1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)   Counting objects:  20% (2/10)   Counting objects:  30% (3/10)   Counting objects:  40% (4/10)   Counting objects:  50% (5/10)   Counting objects:  60% (6/10)   Counting objects:  70% (7/10)   Counting objects:  80% (8/10)   Counting objects:  90% (9/10)   Counting objects: 100% (10/10)   Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 667 bytes | 333.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git
+   0153dd5..355fa8e  master -> master
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git log
+[?1h=[33mcommit 355fa8e934f1b9dfe3b8aa2321ee5aacb2f80d6e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m[m
+Author: Rei Imai <rimai1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:26:33 2019 -0400[m
+[m
+    working with warnings[m
+[m
+[33mcommit 0153dd545c8cc14ce9e2e7ed402473e94c7c89fe[m[m
+Author: Rei Imai <rimai1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:21:21 2019 -0400[m
+[m
+    added README[m
+[K[?1l>rimai1@g7-34:~/tmp/lab8/work/lab8$ ge[K[Kls
+hello  hello.c	Makefile  README.md
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ge[Kedi [Kt hello.c &
+[1] 20143
+rimai1@g7-34:~/tmp/lab8/work/lab8$ 
+(gedit:20143): Gtk-[1;33mWARNING[0m **: [34m15:27:47.617[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+[1]+  Done                    gedit hello.c
+rimai1@g7-34:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./hello rei
+hello rei
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git status -s
+ [31mM[m hello.c
+rimai1@g7-34:~/tmp/lab8/work/lab8$ g[Kgit add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+
+rimai1@g7-34:~/tmp/lab8/work/lab8$ -a
+bash: -a: command not found
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git commit -a -m ""w"o"r"k"i"n"g":" "c"l"e"a"n" "c"o"m"p"l"[1P"i"l"e"
+[master b3ce02e] working: clean compile
+ Committer: Rei Imai <rimai1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git ps[Kush
+rimai1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 399 bytes | 399.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git
+   355fa8e..b3ce02e  master -> master
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git status -s
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git log -l ge[K[Khello.c
+[?1h=[33mcommit b3ce02e1c35c9bc68bebea43c0d1e6ce6da68d66[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m[m
+Author: Rei Imai <rimai1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:30:34 2019 -0400[m
+[m
+    working: clean compile[m
+[m
+[33mcommit 355fa8e934f1b9dfe3b8aa2321ee5aacb2f80d6e[m[m
+Author: Rei Imai <rimai1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:26:33 2019 -0400[m
+[m
+    working with warnings[m
+[m
+[33mcommit 0153dd545c8cc14ce9e2e7ed402473e94c7c89fe[m[m
+Author: Rei Imai <rimai1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:21:21 2019 -0400[m
+[m
+    added README[m
+[K[?1l>rimai1@g7-34:~/tmp/lab8/work/lab8$ makr[Ke[K[K[K[Kmake[K[K[K[Kmk[Kake
+make: Nothing to be done for 'all'.
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./ [Khello [K
+usage: ./hello NAME
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ,.[K[K./hello >/dev/null
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git dfi[K[Kiff
+[?1h=[K[?1l>rimai1@g7-34:~/tmp/lab8/work/lab8$ fii[K[K[Kdiff --git a/hello.c b/helloc[K.c
+diff: unrecognized option '--git'
+diff: Try 'diff --help' for more information.
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ls[K[Kls
+hello  hello.c	Makefile  README.md
+rimai1@g7-34:~/tmp/lab8/work/lab8$ gedit hello.c
+
+(gedit:21570): Gtk-[1;33mWARNING[0m **: [34m15:36:08.198[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+rimai1@g7-34:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:8:12:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kprintf[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+     printf([01;35m[Kstderr[m[K, "usage: %s NAME\n", argv[0]);
+            [01;35m[K^~~~~~[m[K
+In file included from [01m[Khello.c:1[m[K:
+[01m[K/usr/include/stdio.h:332:43:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[KFILE *[m[K’ {aka ‘[01m[Kstruct _IO_FILE *[m[K’}
+ extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+rimai1@g7-34:~/tmp/lab8/work/lab8$ makegedit hello.c
+
+(gedit:22038): Gtk-[1;33mWARNING[0m **: [34m15:36:58.702[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+rimai1@g7-34:~/tmp/lab8/work/lab8$ gedit hello.cmake[K
+cc -g -Wall -std=c11    hello.c   -o hello
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./ghe[K[K[Khello
+usage: ./hello NAME
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./gell[K[K[K[Khello >/dev/null
+usage: ./hello NAME
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git fi[K[Kdiif[K[Kff
+[?1h=[1mdiff --git a/work/lab8/hello.c b/work/lab8/hello.c[m[m
+[1mindex 14e4e73..707ef29 100644[m[m
+[1m--- a/work/lab8/hello.c[m[m
+[1m+++ b/work/lab8/hello.c[m[m
+[36m@@ -5,7 +5,7 @@[m [mint[m[m
+ main(int argc, const char *argv[])[m[m
+ {[m[m
+   if (argc != 2) {[m[m
+[31m-    printf("usage: %s NAME\n", argv[0]);[m[m
+[32m+[m[32m    fprintf(stderr, "usage: %s NAME\n", argv[0]);[m[m
+     exit(1);[m[m
+   }[m[m
+   printf("hello %s\n", argv[1]);[m[m
+[K[?1l>rimai1@g7-34:~/tmp/lab8/work/lab8$ git commit -a[Ka -m ""s"e"n"d" "u"s"a"g"e" "m"e"s"s"a"g"e" "t"o" "s"t"d"e" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr"r"
+[master da555f9] send usage message to stderr
+ Committer: Rei Imai <rimai1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git push
+rimai1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 392 bytes | 392.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git
+   b3ce02e..da555f9  master -> master
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git shortlog
+[?1h=Rei Imai (4):[m
+      added README[m
+      working with warnings[m
+      working: clean compile[m
+      send usage message to stderr[m
+[m
+[K[?1l>rimai1@g7-34:~/tmp/lab8/work/lab8$ git cheack[K[K[Kckout -b hello-multi
+Switched to a new branch 'hello-multi'
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git branch -l
+[?1h=* [32mhello-multi[m[m
+  master[m[m
+[K[?1l>rimai1@g7-34:~/tmp/lab8/work/lab8$ cp =[K=[K-[K~/cs220/labs/lab69[K[K98[K[K8[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit-repos/cs220/labs/lab8/files/hello.[K-mu lti[Kl[Ki.c helloc[K.c
+rimai1@g7-34:~/tmp/lab8/work/lab8$ make[K[K[K[Kl[Kls
+hello  hello.c	Makefile  README.md
+rimai1@g7-34:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./hh[Kello
+usage: ./hello NAME...
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./hello rei iam[K[Kam[K[Kmai
+hello rei
+hello imai
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git commit -a i[K0[K-m ""a"l"l"o"w" "g"r"e"e"e"[1P"t"i"n"g" "m"u"l"t"i"p"l"e" "n"a" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm"e"s"
+[hello-multi 8e18652] allow greeting multiple names
+ Committer: Rei Imai <rimai1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git push -u origin hello-multi
+rimai1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 454 bytes | 454.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git
+ * [new branch]      hello-multi -> hello-multi
+Branch 'hello-multi' set up to track remote branch 'hello-multi' from 'origin'.
+rimai1@g7-34:~/tmp/lab8/work/lab8$ you can[K[K[K[K[K[K[Kgit checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+rimai1@g7-34:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./hello rei iam[K[Kmai
+usage: ./hello NAME
+rimai1@g7-34:~/tmp/lab8/work/lab8$ gedit hello.c
+
+(gedit:23494): Gtk-[1;33mWARNING[0m **: [34m15:44:38.312[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+rimai1@g7-34:~/tmp/lab8/work/lab8$ tail -3 hello.c
+  printf("hello %s\n", argv[1]);
+  return 0;
+}
+rimai1@g7-34:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./hello
+usage: ./hello NAME
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./hello rei
+hello rei
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git commit -a 0[K-,m[K[Km ""a"d"d"e"d" "r"e"t"u"r"n" "a"t" "e"n"d" "o"f" "m"a"i" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn"(")"
+[master 7703e53] added return at end of main()
+ Committer: Rei Imai <rimai1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git ps[Kush
+rimai1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 387 bytes | 387.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git
+   da555f9..7703e53  master -> master
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git checkout hello-multi
+Switched to branch 'hello-multi'
+Your branch is up to date with 'origin/hello-multi'.
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git merge master
+Auto-merging work/lab8/hello.c
+CONFLICT (content): Merge conflict in work/lab8/hello.c
+Automatic merge failed; fix conflicts and then commit the result.
+rimai1@g7-34:~/tmp/lab8/work/lab8$ <<<[K[K[Kgedit hello.c
+
+(gedit:24273): Gtk-[1;33mWARNING[0m **: [34m15:48:45.237[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+rimai1@g7-34:~/tmp/lab8/work/lab8$ tat[Kl[Kil -5 hello.c
+  }
+
+  return 0;
+
+}
+rimai1@g7-34:~/tmp/lab8/work/lab8$ make ./helo[Klo[K[K[K[K[K[K[K[K
+cc -g -Wall -std=c11    hello.c   -o hello
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ./hello rei imai
+hello rei
+hello imai
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git commit -a -m ""m"e"r"g"e"d" "m"a"s"t"e"r"
+[hello-multi 7b3c3a0] merged master
+ Committer: Rei Imai <rimai1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git push
+rimai1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 13, done.
+Counting objects:   7% (1/13)   Counting objects:  15% (2/13)   Counting objects:  23% (3/13)   Counting objects:  30% (4/13)   Counting objects:  38% (5/13)   Counting objects:  46% (6/13)   Counting objects:  53% (7/13)   Counting objects:  61% (8/13)   Counting objects:  69% (9/13)   Counting objects:  76% (10/13)   Counting objects:  84% (11/13)   Counting objects:  92% (12/13)   Counting objects: 100% (13/13)   Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 408 bytes | 408.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git
+   8e18652..7b3c3a0  hello-multi -> hello-multi
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git checkout mastr[Ker
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git m[Kmerge master[K[K[K[K[K[Khello-multi
+Updating 7703e53..7b3c3a0
+Fast-forward
+ work/lab8/hello.c | 11 [32m++++++++[m[31m---[m
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+rimai1@g7-34:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ../hello rei imai
+bash: ../hello: No such file or directory
+rimai1@g7-34:~/tmp/lab8/work/lab8$ ../hello rei imai[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K/hello rei imai
+hello rei
+hello imai
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git branch -l
+[?1h=  hello-multi[m[m
+* [32mmaster[m[m
+[K[?1l>rimai1@g7-34:~/tmp/lab8/work/lab8$ git shortlog hello.c
+[?1h=Rei Imai (6):[m
+      working with warnings[m
+      working: clean compile[m
+      send usage message to stderr[m
+      allow greeting multiple names[m
+      added return at end of main()[m
+      merged master[m
+[m
+[K[?1l>rimai1@g7-34:~/tmp/lab8/work/lab8$ g[Kgit commit -a -m ::[K[K""m"e"r"g"e"d" "h"e"l"l"o"-"m"u"l"t"i"
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+rimai1@g7-34:~/tmp/lab8/work/lab8$ git push'[K
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.204' to the list of known hosts.
+rimai1@remote.cs.binghamton.edu's password: 
+Total 0 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git
+   7703e53..7b3c3a0  master -> master
+rimai1@g7-34:~/tmp/lab8/work/lab8$ cd ~/git-repos/i220b
+rimai1@g7-34:~/git-repos/i220b$ git remote add lab8 \
+> ssh [K://rimi[Kai1@bingham[K[K[K[K[K[K[Kremote.cs.binghamton.edu/ho[Km[Kome/rimai1/got[K[Kit-repos/lab8.git
+rimai1@g7-34:~/git-repos/i220b$ git pi[Kull --allow-unrelated-histories lab8 master [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kr
+rimai1@remote.cs.binghamton.edu's password: 
+warning: no common commits
+remote: Enumerating objects: 37, done.[K
+remote: Counting objects:   2% (1/37)   [Kremote: Counting objects:   5% (2/37)   [Kremote: Counting objects:   8% (3/37)   [Kremote: Counting objects:  10% (4/37)   [Kremote: Counting objects:  13% (5/37)   [Kremote: Counting objects:  16% (6/37)   [Kremote: Counting objects:  18% (7/37)   [Kremote: Counting objects:  21% (8/37)   [Kremote: Counting objects:  24% (9/37)   [Kremote: Counting objects:  27% (10/37)   [Kremote: Counting objects:  29% (11/37)   [Kremote: Counting objects:  32% (12/37)   [Kremote: Counting objects:  35% (13/37)   [Kremote: Counting objects:  37% (14/37)   [Kremote: Counting objects:  40% (15/37)   [Kremote: Counting objects:  43% (16/37)   [Kremote: Counting objects:  45% (17/37)   [Kremote: Counting objects:  48% (18/37)   [Kremote: Counting objects:  51% (19/37)   [Kremote: Counting objects:  54% (20/37)   [Kremote: Counting objects:  56% (21/37)   [Kremote: Counting objects:  59% (22/37)   [Kremote: Counting objects:  62% (23/37)   [Kremote: Counting objects:  64% (24/37)   [Kremote: Counting objects:  67% (25/37)   [Kremote: Counting objects:  70% (26/37)   [Kremote: Counting objects:  72% (27/37)   [Kremote: Counting objects:  75% (28/37)   [Kremote: Counting objects:  78% (29/37)   [Kremote: Counting objects:  81% (30/37)   [Kremote: Counting objects:  83% (31/37)   [Kremote: Counting objects:  86% (32/37)   [Kremote: Counting objects:  89% (33/37)   [Kremote: Counting objects:  91% (34/37)   [Kremote: Counting objects:  94% (35/37)   [Kremote: Counting objects:  97% (36/37)   [Kremote: Counting objects: 100% (37/37)   [Kremote: Counting objects: 100% (37/37), done.[K
+remote: Compressing objects:   5% (1/20)   [Kremote: Compressing objects:  10% (2/20)   [Kremote: Compressing objects:  15% (3/20)   [Kremote: Compressing objects:  20% (4/20)   [Kremote: Compressing objects:  25% (5/20)   [Kremote: Compressing objects:  30% (6/20)   [Kremote: Compressing objects:  35% (7/20)   [Kremote: Compressing objects:  40% (8/20)   [Kremote: Compressing objects:  45% (9/20)   [Kremote: Compressing objects:  50% (10/20)   [Kremote: Compressing objects:  55% (11/20)   [Kremote: Compressing objects:  60% (12/20)   [Kremote: Compressing objects:  65% (13/20)   [Kremote: Compressing objects:  70% (14/20)   [Kremote: Compressing objects:  75% (15/20)   [Kremote: Compressing objects:  80% (16/20)   [Kremote: Compressing objects:  85% (17/20)   [Kremote: Compressing objects:  90% (18/20)   [Kremote: Compressing objects:  95% (19/20)   [Kremote: Compressing objects: 100% (20/20)   [Kremote: Compressing objects: 100% (20/20), done.[K
+remote: Total 37 (delta 11), reused 0 (delta 0)[K
+Unpacking objects:   2% (1/37)   Unpacking objects:   5% (2/37)   Unpacking objects:   8% (3/37)   Unpacking objects:  10% (4/37)   Unpacking objects:  13% (5/37)   Unpacking objects:  16% (6/37)   Unpacking objects:  18% (7/37)   Unpacking objects:  21% (8/37)   Unpacking objects:  24% (9/37)   Unpacking objects:  27% (10/37)   Unpacking objects:  29% (11/37)   Unpacking objects:  32% (12/37)   Unpacking objects:  35% (13/37)   Unpacking objects:  37% (14/37)   Unpacking objects:  40% (15/37)   Unpacking objects:  43% (16/37)   Unpacking objects:  45% (17/37)   Unpacking objects:  48% (18/37)   Unpacking objects:  51% (19/37)   Unpacking objects:  54% (20/37)   Unpacking objects:  56% (21/37)   Unpacking objects:  59% (22/37)   Unpacking objects:  62% (23/37)   Unpacking objects:  64% (24/37)   Unpacking objects:  67% (25/37)   Unpacking objects:  70% (26/37)   Unpacking objects:  72% (27/37)   Unpacking objects:  75% (28/37)   Unpacking objects:  78% (29/37)   Unpacking objects:  81% (30/37)   Unpacking objects:  83% (31/37)   Unpacking objects:  86% (32/37)   Unpacking objects:  89% (33/37)   Unpacking objects:  91% (34/37)   Unpacking objects:  94% (35/37)   Unpacking objects:  97% (36/37)   Unpacking objects: 100% (37/37)   Unpacking objects: 100% (37/37), done.
+From ssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> lab8/master
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"~/git-repos/i220b/.git/MERGE_MSG" 7L, 310C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/rimai1/git-repos/laa[2;1Hb8
+
+[34m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;MERGE_MSG (~/git-repos/i220b/.git) - VIM]1;MERGE_MSG[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/rimai1/git-repos/laa[2;1Hb8
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"~/git-repos/i220b/.git/MERGE_MSG" 7L, 310C[1;1H[?25h[?25l[24;63H7,13[8;13H[?25h[?25l[24;63H1,82[2;2H[?25h[?25l[24;63H7,13[8;13H[?25h[?25l[24;63H1,1 [1;1H[?25h[?25l[24;53Hy[1;1H[?25h[?25l[24;54Hh[1;1H[24;53H  [1;1H[?25h[?25l[24;53Hg[1;1H[?25h[?25l[24;53H [1;1H[24;53Hg[1;1H[?25h[?25l[24;54H~@k[1;1H[24;53H1x1 [1;1H[79Caa[2;1Hb[24;1H[1m-- SELECT BLOCK --[m[24;19H[K[24;53H1x1[1;1H[24;63H1,1[11CAll[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/labb[2;1H8[2;2H[K[24;1H[K[24;63H1,1[11CAll]2;MERGE_MSG + (~/git-repos/i220b/.git) - VIM]1;MERGE_MSG[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H^M[1;1H[24;53H  [3;1H[24;63H2,0-1[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [2;1H[24;63H1,81 [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [1;80H[24;66H0[1;80H[?25h[?25l[24;53H~@k[1;80H[24;53H   [1;79H[24;65H79[1;79H[?25h[?25l[24;53H~@k[1;79H[24;53H   [1;78H[24;66H8[1;78H[?25h[?25l[24;53H~@k[1;78H[24;53H   [1;77H[24;66H7[1;77H[?25h[?25l[24;53H^M[1;77H[24;53H  [3;1H[24;63H2,0-1[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [4;1H[24;63H3,1  [4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [5;1H[24;63H4[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [6;1H[24;63H5[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [7;1H[24;63H6[7;1H[?25h[?25l[24;53H~@k[7;1H[24;53H   [8;1H[24;63H7[8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [8;1H[?25h[?25l[24;53Hh[8;1H[24;53H [8;1H[?25h[?25l[24;53Hw[8;1H[24;53H [8;3H[24;65H3[8;3H[?25h[?25l[24;53He[8;3H[24;53H [8;5H[24;65H5[8;5H[?25h[?25l[24;53Hs[8;5H[24;53H [8;5H[24;53Hcl[8;5H[24;53H  [8;5H[24;1H[1m-- INSERT --[m[24;63H[K[24;63H7,5[11CAll[8;5H[96m commit.[m[8;13H[K[8;5H[?25h[?25l[96mg commit.[m[24;65H6[8;6H[?25h[?25l[96mw commit.[m[24;65H7[8;7H[?25h[?25l[96m commit.[m[8;14H[K[24;65H6[8;6H[?25h[?25l[96m commit.[m[8;13H[K[24;65H5[8;5H[?25h[?25l[96m commit.[m[8;12H[K[24;65H4[8;4H[?25h[?25l[96m commit.[m[8;11H[K[24;65H3[8;3H[?25h[?25l[96mcommit.[m[8;10H[K[24;65H2[8;2H[?25h[?25l[1C[96m commit.[m[24;65H3[8;3H[?25h[?25l[96mcommit.[m[8;10H[K[24;65H2[8;2H[?25h[?25l[24;65H10[8;10H[?25h[?25l[24;65H4 [8;4H[?25h[?25l[24;63H6,20[7;20H[?25h[?25l[24;63H1,82[2;2H[?25h[?25l[1;23r[23;1H
+[1;24r[1;1H[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/lab[23;1H[94m~                                                                               [m[24;63H[K[24;63H1,81[10CAll[2;1H[?25h[?25l[2;23r[2;1H[L[1;24r[24;63H[K[24;63H2,1[11CAll[2;1H[?25h[?25l[1;23r[23;1H
+[1;24r[1;1H[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/lab[23;1H[94m~                                                                               [m[24;63H[K[24;63H1,81[10CAll[2;1H[?25h[?25l[2;23r[2;1H[L[1;24r[2;1Hs[24;63H[K[24;63H1,82[10CAll[2;2H[?25h[?25lg[24;66H3[2;3H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H2,1[11CAll[3;1H[?25h[?25l[1;23r[23;1H
+[1;24r[1;1H[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/labb[2;1Hsg[23;1H[94m~                                                                               [m[24;63H[K[24;63H1,83[10CAll[2;3H[?25h[?25l[24;63H2,1 [3;1H[?25h[?25l[24;63H3,72[4;72H[?25h[?25l[24;63H4,67[5;67H[?25h[?25l[24;63H5,2 [6;2H[?25h[?25l[24;63H6,71[7;71H[?25h[?25l[24;63H7,10[8;10H[?25h[?25l[24;63H6,71[7;71H[?25h[?25l[24;63H5,2 [6;2H[?25h[?25l[24;63H4,67[5;67H[?25h[?25l[24;63H3,72[4;72H[?25h[?25l[24;63H2,1 [3;1H[?25h[?25l[1;23r[23;1H
+[1;24r[1;1H[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/labb[2;1Hsg[23;1H[94m~                                                                               [m[24;63H[K[24;63H1,83[10CAll[2;3H[?25h[?25l[2;2H[K[24;66H2[2;2H[?25h[?25l[1;23r[23;1H
+[1;24r[1;1H[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/lab[23;1H[94m~                                                                               [m[24;63H[K[24;63H1,81[10CAll[2;1H[?25h[?25l[2;23r[2;1H[L[1;24r[24;63H[K[24;63H2,1[11CAll[2;1H[?25h[?25l[97m[101mf[m[24;65H2[2;2H[?25h[?25l[97m[101mo[m[24;65H3[2;3H[?25h[?25l[97m[101mr[m[24;65H4[2;4H[?25h[?25l[97m[101m [m[24;65H5[2;5H[?25h[?25l[97m[101mt[m[24;65H6[2;6H[?25h[?25l[97m[101mh[m[24;65H7[2;7H[?25h[?25l[97m[101me[m[24;65H8[2;8H[?25h[?25l[97m[101m [m[24;65H9[2;9H[?25h[?25l[97m[101ml[m[24;65H10[2;10H[?25h[?25l[97m[101ma[m[24;66H1[2;11H[?25h[?25l[97m[101mb[m[24;66H2[2;12H[?25h[?25l[97m[101m9[m[24;66H3[2;13H[?25h[?25l[2;12H[K[24;66H2[2;12H[?25h[?25l[97m[101m8[m[24;66H3[2;13H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25l[2;23r[23;1H
+[1;24r[2;1H[97m[101mfor the lab8[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,13[10CAll[2;13H[?25h[?25l[97m[101m [m[24;66H4[2;14H[?25h[?25l[97m[101m [m[24;66H5[2;15H[?25h[?25l[2;14H[K[24;66H4[2;14H[?25h[?25l[2;13H[K[24;66H3[2;13H[?25h[?25l[2;12H[K[24;66H2[2;12H[?25h[?25l[2;11H[K[24;66H1[2;11H[?25h[?25l[2;10H[K[24;66H0[2;10H[?25h[?25l[2;9H[K[24;65H9 [2;9H[?25h[?25l[2;8H[K[24;65H8[2;8H[?25h[?25l[2;7H[K[24;65H7[2;7H[?25h[?25l[2;6H[K[24;65H6[2;6H[?25h[?25l[2;5H[K[24;65H5[2;5H[?25h[?25l[2;4H[K[24;65H4[2;4H[?25h[?25l[2;3H[K[24;65H3[2;3H[?25h[?25l[2;2H[K[24;65H2[2;2H[?25h[?25l[2;1H[K[24;65H1[2;1H[?25h[?25l[1;23r[23;1H
+[1;24r[1;1H[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/lab[23;1H[94m~                                                                               [m[24;63H[K[24;63H1,81[10CAll[2;1H[?25h[?25l[1;80H[K[24;66H0[1;80H[?25h[?25l[1;79H[K[24;65H79[1;79H[?25h[?25l[2;23r[2;1H[L[1;24r[1;24H[K[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/la[m[24;63H[K[24;63H2,56[10CAll[2;56H[?25h[?25l[97m[101mb[m[24;66H7[2;57H[?25h[?25l[97m[101m [m[24;66H8[2;58H[?25h[?25l[2;57H[K[24;66H7[2;57H[?25h[?25l[97m[101m [m[24;66H8[2;58H[?25h[?25l[2;57H[K[24;66H7[2;57H[?25h[?25l[97m[101m8[m[24;66H8[2;58H[?25h[?25l[97m[101m [m[24;66H9[2;59H[?25h[?25l[2;58H[K[24;66H8[2;58H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25l[4;23r[4;1H[L[1;24r[24;63H[K[24;63H4,1[11CAll[4;1H[?25h[?25l[3;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25l[2;23r[23;1H
+[1;24r[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,58[10CAll[2;58H[?25h[?25l[97m[101m.[m[24;66H9[2;59H[?25h[?25l[97m[101mg[m[24;65H60[2;60H[?25h[?25l[97m[101mi[m[24;66H1[2;61H[?25h[?25l[97m[101mt[m[24;66H2[2;62H[?25h[?25l[97m[101m [m[24;66H3[2;63H[?25h[?25l[2;62H[K[24;66H2[2;62H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25l[24;63H8,10[8;10H[?25h[?25l[24;63H4,2 [4;2H[?25h[?25l[24;4H[1m(insert)- VISUAL --[m[24;63H[K[24;53H2[4;3H[24;63H4,3[11CAll[4;3H[96m[48;5;242m [?25h[?25l[m[24;53H3[4;4H[96m[48;5;242mP[m[24;65H4[4;4H[?25h[?25l[24;53H4[4;5H[96m[48;5;242ml[m[24;65H5[4;5H[?25h[?25l[24;53H8[4;9H[96m[48;5;242mease[m[24;65H9[4;9H[?25h[?25l[24;53H2[5;11H[4;9H[96m[48;5;242m enter a commit message to explain why this merge is necessary,[m[48;5;242m [m
+[96m[48;5;242m# especial[m[24;63H5,11[5;11H[?25h[?25l[2C[96m[48;5;242mly[m[24;66H3[5;13H[?25h[?25l[3C[96m[48;5;242m if[m[24;66H6[5;16H[?25h[?25l[2C[96m[48;5;242m i[m[24;66H8[5;18H[?25h[?25l[3C[96m[48;5;242mt m[m[24;65H21[5;21H[?25h[?25l[2C[96m[48;5;242mer[m[24;66H3[5;23H[?25h[?25l[3C[96m[48;5;242mges[m[24;66H6[5;26H[?25h[?25l[2C[96m[48;5;242m a[m[24;66H8[5;28H[?25h[?25l[24;53H3[6;2H[5;28H[96m[48;5;242mn updated upstream into a topic branch.[m[48;5;242m [m
+[96m[48;5;242m#[m[24;63H6,2 [6;2H[?25h[?25l[?25h[?25l[?25h[?25l[24;53H4[7;34H[6;2H[48;5;242m [m
+[96m[48;5;242m# Lines starting with '#' will be[m[24;63H7,34[7;34H[?25h[?25l[1C[96m[48;5;242m [m[24;66H5[7;35H[?25h[?25l[1C[96m[48;5;242mi[m[24;66H6[7;36H[?25h[?25l[1C[96m[48;5;242mg[m[24;66H7[7;37H[?25h[?25l[24;53H5[8;10H[7;37H[96m[48;5;242mnored, and an empty message aborts[m[48;5;242m [m
+[96m[48;5;242m# commit.[m[24;63H8,10[8;10H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[24;53H [8;10H[24;4H[1mINSERTt --[m[24;13H[K[24;63H8,10[10CAll[4;2H[96m Please enter a commit message to explain why this merge is necessary,[m[4;72H[K[5;1H[96m# especially if it merges an updated upstream into a topic branch.[m[5;67H[K[6;1H[96m#[m[6;2H[K[7;1H[96m# Lines starting with '#' will be ignored, and an empty message aborts[m[7;71H[K[8;1H[96m# commit.[?25h[?25l[m[24;4H[1m(insert)- VISUAL --[m[24;63H[K[24;53H1[8;10H[24;63H8,10[10CAll[8;10H[?25h[?25l[?25h[?25l[24;53H [8;10H[24;4H[1mINSERTt --[m[24;13H[K[24;63H8,10[10CAll[8;10H[?25h[?25l[24;63H3,1 [3;1H[?25h[?25l[24;63H7,15[7;15H[?25h[?25l[24;4H[1m(insert)- VISUAL --[m[24;63H[K[24;53H2[8;10H[24;63H8,10[10CAll[7;15H[96m[48;5;242mng with '#' will be ignored, and an empty message aborts[m[48;5;242m [m
+[96m[48;5;242m# commit.[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[m[24;53H [8;10H[24;4H[1mINSERTt --[m[24;13H[K[24;63H8,10[10CAll[7;15H[96mng with '#' will be ignored, and an empty message aborts[m[7;71H[K[8;1H[96m# commit.[?25h[?25l[m[24;63H7,8 [7;8H[?25h[?25l[24;63H3,1[3;1H[?25h[?25l[24;63H1,24[1;24H[?25h[?25l[24;4H[1m(insert)- VISUAL --[m[24;63H[K[24;53H2[1;23H[24;63H1,23[10CAll[1;24H[48;5;242m [?25h[?25l[m[24;53H3[1;22H[1C[93m[48;5;242mf[m[24;66H2[1;22H[?25h[?25l[24;53H5[1;20H[1C[93m[48;5;242m o[m[24;66H0[1;20H[?25h[?25l[24;53H7[1;18H[1C[93m[48;5;242mr'[m[24;65H18[1;18H[?25h[?25l[24;53H11[1;14H[1C[93m[48;5;242maste[m[24;66H4[1;14H[?25h[?25l[24;54H3[1;12H[1C[93m[48;5;242m'm[m[24;66H2[1;12H[?25h[?25l[24;54H5[1;10H[1C[93m[48;5;242mh [m[24;66H0[1;10H[?25h[?25l[24;54H7[1;8H[1C[93m[48;5;242mnc[m[24;65H8 [1;8H[?25h[?25l[24;54H8[1;7H[1C[93m[48;5;242ma[m[24;65H7[1;7H[?25h[?25l[24;54H9[1;6H[1C[93m[48;5;242mr[m[24;65H6[1;6H[?25h[?25l[24;53H20[1;5H[1C[93m[48;5;242mb[m[24;65H5[1;5H[?25h[?25l[24;54H1[1;4H[1C[93m[48;5;242m [m[24;65H4[1;4H[?25h[?25l[24;54H2[1;3H[1C[93m[48;5;242me[m[24;65H3[1;3H[?25h[?25l[24;54H3[1;2H[1C[93m[48;5;242mg[m[24;65H2[1;2H[?25h[?25l[24;54H4[1;1H[1C[93m[48;5;242mr[m[24;65H1[1;1H[?25h[?25l[24;54H3[1;2H[93mr[m[24;65H2[1;2H[?25h[?25l[24;54H2[1;3H[93mg[m[24;65H3[1;3H[?25h[?25l[24;54H1[1;4H[93me[m[24;65H4[1;4H[?25h[?25l[24;54H0[1;5H[93m [m[24;65H5[1;5H[?25h[?25l[24;53H19[1;6H[93mb[m[24;65H6[1;6H[?25h[?25l[?25h[?25l[24;53H  [3;1H[24;4H[1mINSERTt --[m[24;13H[K[24;63H3,1[11CAll[1;7H[93mranch 'master' of[m[1;24H[K[3;1H[?25h[?25l[24;63H4,7[4;7H[?25h[?25l[24;63H3,1[3;1H[?25h[?25l[24;1H[K[24;63H3,0-1[9CAll[3;1H[?25h[?25l[24;1HType  :qa!  and press <E...all changes and exit Vim[24;63H[K[24;63H3,0-1[9CAll[3;1H[?25h[?25l[24;53Hq[3;1H[?25h[?25l[24;54Ha[3;1H[24;1H[1mrecording @a[m[24;13H[K[24;63H3,0-1[9CAll[3;1H[?25h[?25l[24;53H![3;1H[?25h[?25l[24;54H^M[3;1H[24;53H   [3;1H[24;1H[K[24;1H:[?2004h.,.+1![?25h[?25l[1mrecording @a[m[50C3,0-1[9CAll[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [2;61H[24;63H2,61 [2;61H[?25h[?25l[24;53H~@k[2;61H[24;53H   [2;60H[24;66H0[2;60H[?25h[?25l[24;53H~@k[2;60H[24;53H   [2;59H[24;65H59[2;59H[?25h[?25l[24;63H3,0-1[3;1H[?25h[?25l[24;1HType  :qa!  and press <E...all changes and exit Vim[24;63H[K[24;1H[1mrecording @a[m[24;13H[K[24;63H3,0-1[9CAll[3;1H[?25h[?25l[24;1HType  :qa!  and press <E...all changes and exit Vim[24;63H[K[24;1H[1mrecording @a[m[24;13H[K[24;63H3,0-1[9CAll[3;1H[?25h[?25l[24;53Hc[3;1H[?25h[?25l[24;54Hv[3;1H[?25h[?25l[24;55H=[3;1H[24;53H   [3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [2;61H[24;63H2,61 [2;61H[?25h[?25l[24;53H~@k[2;61H[24;53H   [2;60H[24;66H0[2;60H[?25h[?25l[24;53H~@k[2;60H[24;53H   [2;59H[24;65H59[2;59H[?25h[?25l[24;53H^D[2;59H[24;53H  [8;1H[24;63H8,1 [8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [7;70H[24;63H7,70[7;70H[?25h[?25l[24;53H~@k[7;70H[24;53H   [7;69H[24;65H69[7;69H[?25h[?25l[24;53H~@k[7;69H[24;53H   [7;68H[24;66H8[7;68H[?25h[?25l[24;53H~@k[7;68H[24;53H   [7;67H[24;66H7[7;67H[?25h[?25l[24;53H~@k[7;67H[24;53H   [7;66H[24;66H6[7;66H[?25h[?25l[24;53H~@k[7;66H[24;53H   [7;65H[24;66H5[7;65H[?25h[?25l[24;63H3,0-1[3;1H[?25h[?25l[24;63H8,9  [8;9H[?25h[?25l[24;53H2[8;10H[96m[48;5;242m.[m[24;1H[1m--c VISUAL --[m [1mrecording @a[m[24;53H[K[24;53H2[8;10H[24;63H8,10[10CAll[8;10H[?25h[?25l[7;10H[1;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;53H[K[24;53H2[7;10H[24;63H8,10[10CBot[7;10H[?25h[?25l[6;10H[1;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;53H[K[24;53H2[6;10H[24;63H8,10[10CBot[6;10H[?25h[?25l[24;53H [5;10H[1;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;63H[K[24;63H8,10[10CBot[5;10H[?25h[?25l[24;53H2[5;10H[?25h[?25l[24;53H [6;9H[1;23r[1;1H[L[1;24r[6;9H[96m.[m[24;1H[1mrecording @ar[m[24;13H[K[24;63H8,9[11CBot[6;9H[?25h[?25l[24;53H2[6;10H[96m[48;5;242m.[m[24;1H[1m--c VISUAL --[m [1mrecording @a[m[24;53H[K[24;53H2[6;10H[24;63H8,10[10CBot[6;10H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[5;10H[1;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;53H[K[24;53H2[5;10H[24;63H8,10[10CBot[5;10H[?25h[?25l[4;10H[1;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;53H[K[24;53H2[4;10H[24;63H8,10[10CBot[4;10H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[24;53H [6;9H[1;23r[1;1H[2L[1;24r[2;1H[96m# Please enter a commit message to explain why this merge is necessary,[6;9H.[m[24;1H[1mrecording @ar[m[24;13H[K[24;63H8,9[11CBot[6;9H[?25h[?25l[24;53H2[6;10H[96m[48;5;242m.[m[24;1H[1m--c VISUAL --[m [1mrecording @a[m[24;53H[K[24;53H2[6;10H[24;63H8,10[10CBot[6;10H[?25h[?25l[5;28H[1C[96m[48;5;242mll be ignored, and an empty message aborts[m[48;5;242m [m
+[96m[48;5;242m# commit[m[24;63H7,28[5;28H[?25h[?25l[1C[96m[48;5;242mi[m[24;66H7[5;27H[?25h[?25l[24;53H3[4;2H
+[96m[48;5;242m# Lines starting with '#' w[m[24;63H6,2 [4;2H[?25h[?25l[?25h[?25l[?25h[?25l[24;53H4[3;23H[1C[96m[48;5;242mes an updated upstream into a topic branch.[m[48;5;242m [m
+[96m[48;5;242m#[m[48;5;242m [m[24;63H5,23[3;23H[?25h[?25l[1C[96m[48;5;242mg[m[24;66H2[3;22H[?25h[?25l[1C[96m[48;5;242mr[m[24;66H1[3;21H[?25h[?25l[24;53H5[2;20H[1C[96m[48;5;242mmit message to explain why this merge is necessary,[m[48;5;242m [m
+[96m[48;5;242m# especially if it me[m[24;63H4,20[2;20H[?25h[?25l[24;53H6[2;1H[1;23r[1;1H[L[1;24r[1;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m
+
+[96m[48;5;242m# Please enter a com[m[24;53H[K[2;1H[24;63H3,0-1[9CBot[2;1H[?25h[?25l[24;53H7[2;16H[1;23r[1;1H[L[1;24r[1;1H[93merge branch 'master' of[m[2;17H[97m[48;5;242mbinghamton.edu/home/rimai1/git-repos/lab8.git[m[48;5;242m 
+ [m[24;53H[K[24;53H7[2;16H[24;63H2,16[10CAll[2;16H[?25h[?25l[24;53H8[1;14H[1C[93m[48;5;242master' of[m[48;5;242m [m
+[97m[48;5;242mssh://remote.cs.[m[24;63H1,14[1;14H[?25h[?25l[1C[93m[48;5;242m'm[m[24;66H2[1;12H[?25h[?25l[1C[93m[48;5;242m [m[24;66H1[1;11H[?25h[?25l[?25h[?25l[24;53H [2;14H[1;12H[93m 'master' of[m[1;24H[K[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[2;62H[K[3;1H[K[4;1H[96m# Please enter a commit message to explain why this merge is necessary,[m[4;72H[K[5;1H[96m# especially if it merges an updated upstream into a topic branch.[m[5;67H[K[6;1H[96m#[m[6;2H[K[7;1H[96m# Lines starting with '#' will be ignored, and an empty message aborts[m[7;71H[K[8;1H[96m# commit.[m[24;1H[1mrecording @ar[m[24;13H[K[24;63H2,14[10CAll[2;14H[?25h[?25l[24;63H3,0-1[3;1H[?25h[?25l[24;63H2,1  [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H=[2;1H[?25h[?25l[24;54H~@k[2;1H[24;53H    [1;1H[24;63H1[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;65H23[1;23H[?25h[?25l[24;53H~@k[1;23H[24;53H   [1;22H[24;66H2[1;22H[?25h[?25l[24;53H~@k[1;22H[24;53H   [1;21H[24;66H1[1;21H[?25h[?25l[24;53H~@k[1;21H[24;53H   [1;20H[24;66H0[1;20H[?25h[?25l[24;53H~@k[1;20H[24;53H   [1;19H[24;65H19[1;19H[?25h[?25l[24;63H5,37[5;37H[?25h[?25l[24;63H3,0-1[3;1H[?25h[?25l[24;53H"[3;1H[?25h[?25l[24;54H"[3;1H[?25h[?25l[24;55H~@k[3;1H[24;53H     [3;1H[?25h[?25l[24;53Hd[3;1H[?25h[?25l[24;54Hv[3;1H[?25h[?25l[24;55Ht[3;1H[?25h[?25l[24;56H~@k[3;1H[24;53H      [3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [2;61H[24;63H2,61 [2;61H[?25h[?25l[24;53H~@k[2;61H[24;53H   [2;60H[24;66H0[2;60H[?25h[?25l[24;53H~@k[2;60H[24;53H   [2;59H[24;65H59[2;59H[?25h[?25l[24;53H~@k[2;59H[24;53H   [2;58H[24;66H8[2;58H[?25h[?25l[24;53H~@k[2;58H[24;53H   [2;57H[24;66H7[2;57H[?25h[?25l[24;53H~@k[2;57H[24;53H   [2;56H[24;66H6[2;56H[?25h[?25l[24;53H~@k[2;56H[24;53H   [2;55H[24;66H5[2;55H[?25h[?25l[24;63H3,0-1[3;1H[?25h[?25l[24;63H8,9  [8;9H[?25h[?25l[24;63H3,0-1[3;1H[?25h[?25l[24;53H][3;1H[?25h[?25l[24;54H^M[3;1H[24;53H   [3;1H[?25h[?25l[24;53H^M[3;1H[24;53H  [4;1H[24;63H4,1  [4;1H[?25h[?25l[24;53H^M[4;1H[24;53H  [5;1H[24;63H5[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [4;1H[24;63H4[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [3;1H[24;63H3,0-1[3;1H[?25h[?25l[24;53Hc[3;1H[?25h[?25l[24;54Ho[3;1H[24;53H  [3;1H[?25h[?25l[24;53Hm[3;1H[?25h[?25l[24;54Hm[3;1H[24;53H  [3;1H[?25h[?25l[24;53Hi[3;1H[24;53H [3;1H[24;1H[1m--c INSERT --[m [1mrecording @a[m[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25lt[24;65H2[3;2H[?25h[?25l[24;65H3[3;3H[?25h[?25l[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25l[2;23r[23;1H
+[1;24r[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,62[10CAll[2;62H[?25h[?25l[2;61H[K[24;66H1[2;61H[?25h[?25l[97m[101mt[m[24;66H2[2;62H[?25h[?25l[97m[101m [m[24;66H3[2;63H[?25h[?25l[97m[101mc[m[24;66H4[2;64H[?25h[?25l[2;63H[K[24;66H3[2;63H[?25h[?25l[2;62H[K[24;66H2[2;62H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25lc[24;65H2[3;2H[?25h[?25li[24;65H3[3;3H[?25h[?25l[3;2H[K[24;65H2[3;2H[?25h[?25lo[24;65H3[3;3H[?25h[?25ls[24;65H4[3;4H[?25h[?25la[24;65H5[3;5H[?25h[?25l[3;4H[K[24;65H4[3;4H[?25h[?25l[3;3H[K[24;65H3[3;3H[?25h[?25lm[24;65H4[3;4H[?25h[?25lm[24;65H5[3;5H[?25h[?25li[24;65H6[3;6H[?25h[?25lt[24;65H7[3;7H[?25h[?25l[24;65H8[3;8H[?25h[?25l[24;65H7[3;7H[?25h[?25l[3;6H[K[24;65H6[3;6H[?25h[?25l[3;5H[K[24;65H5[3;5H[?25h[?25l[3;4H[K[24;65H4[3;4H[?25h[?25l[3;3H[K[24;65H3[3;3H[?25h[?25l[3;2H[K[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25l[2;23r[23;1H
+[1;24r[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,62[10CAll[2;62H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25lg[24;65H2[3;2H[?25h[?25li[24;65H3[3;3H[?25h[?25lt[24;65H4[3;4H[?25h[?25l[24;65H5[3;5H[?25h[?25lc[24;65H6[3;6H[?25h[?25lo[24;65H7[3;7H[?25h[?25lm[24;65H8[3;8H[?25h[?25lm[24;65H9[3;9H[?25h[?25li[24;65H10[3;10H[?25h[?25lt[24;66H1[3;11H[?25h[?25l[24;66H2[3;12H[?25h[?25l-[24;66H3[3;13H[?25h[?25lm[24;66H4[3;14H[?25h[?25l[24;66H5[3;15H[?25h[?25l"[24;66H6[3;16H[?25h[?25l"[24;66H7[3;17H[?25h[?25l[24;66H6[3;16H[?25h[?25lf"[24;66H7[3;17H[?25h[?25lo"[24;66H8[3;18H[?25h[?25l"[3;18H[K[24;66H7[3;17H[?25h[?25l"[3;17H[K[24;66H6[3;16H[?25h[?25ll"[24;66H7[3;17H[?25h[?25la"[24;66H8[3;18H[?25h[?25lb"[24;66H9[3;19H[?25h[?25l8"[24;65H20[3;20H[?25h[?25l[4;23r[4;1H[L[1;24r[3;20H[K[4;1H"[24;63H[K[24;63H4,1[11CAll[4;1H[?25h[?25l[3;23r[23;1H
+[1;24r[3;1Hgit commit -m "lab8"[23;1H[94m~                                                                               [m[24;63H[K[24;63H3,20[10CAll[3;20H[?25h[?25l[24;66H1[3;21H[?25h[?25l[4;23r[4;1H[L[1;24r[24;63H[K[24;63H4,1[11CAll[4;1H[?25h[?25l[3;23r[23;1H
+[1;24r[3;1Hgit commit -m "lab8"[23;1H[94m~                                                                               [m[24;63H[K[24;63H3,21[10CAll[3;21H[?25h[?25l[3;20H[K[24;66H0[3;20H[?25h[?25l[3;19H[K[24;65H19[3;19H[?25h[?25l[3;18H[K[24;66H8[3;18H[?25h[?25l[3;17H[K[24;66H7[3;17H[?25h[?25l[3;16H[K[24;66H6[3;16H[?25h[?25l[3;15H[K[24;66H5[3;15H[?25h[?25l[24;66H4[3;14H[?25h[?25l[3;13H[K[24;66H3[3;13H[?25h[?25l[3;12H[K[24;66H2[3;12H[?25h[?25l[24;66H1[3;11H[?25h[?25l[3;10H[K[24;66H0[3;10H[?25h[?25l[3;9H[K[24;65H9 [3;9H[?25h[?25l[3;8H[K[24;65H8[3;8H[?25h[?25l[3;7H[K[24;65H7[3;7H[?25h[?25l[3;6H[K[24;65H6[3;6H[?25h[?25l[3;5H[K[24;65H5[3;5H[?25h[?25l[24;65H4[3;4H[?25h[?25l[3;3H[K[24;65H3[3;3H[?25h[?25l[3;2H[K[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25l[2;23r[23;1H
+[1;24r[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,62[10CAll[2;62H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25l[24;63H8,10[8;10H[?25h[?25l[24;4H[1m(insert)- VISUALi -- recording @a[m[24;63H[K[24;53H1[8;10H[24;63H8,10[10CAll[8;10H[?25h[?25l[?25h[?25l[24;53H [8;10H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H8,10[10CAll[8;10H[?25h[?25l[24;63H4,31[4;31H[?25h[?25l[24;63H2,39[2;39H[?25h[?25l[24;4H[1m(insert)- VISUALi -- recording @a[m[24;63H[K[24;53H2[2;40H[24;63H2,40[10CAll[2;39H[97m[48;5;242mm[?25h[?25l[?25h[?25l[m[24;53H~@k[2;40H[24;53H1  [2;39H[97m[101mm[m[24;65H39[2;39H[?25h[?25l[24;53H~@k[2;39H[24;53H2  [3;1H[2;39H[97m[48;5;242mmai1/git-repos/lab8.git[m[48;5;242m [m[24;63H3,0-1[3;1H[?25h[?25l[24;53H^M[3;1H[24;53H3 [4;1H[3;1H[48;5;242m [m[24;63H4,1  [4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H2  [3;1H[3;1H[K[24;63H3,0-1[3;1H[?25h[?25l[24;53H [2;36H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H2,36[10CAll[2;39H[97m[101mmai1/git-repos/lab8.git[m[2;62H[K[2;36H[?25h[?25l[24;63H8,10[8;10H[?25h[?25l[24;63H3,1 [3;1H[?25h[?25l[4;23r[4;1H[L[1;24r[24;63H[K[24;63H4,1[11CAll[4;1H[?25h[?25l[24;63H3[3;1H[?25h[?25l[24;4H[1m(insert)- VISUALi -- recording @a[m[24;63H[K[24;53H1[3;1H[24;63H3,0-1[9CAll[3;1H[?25h[?25l[?25h[?25l[24;53H2[2;60H[1C[97m[48;5;242mt[m[48;5;242m 
+ [m[24;63H2,60 [2;60H[?25h[?25l[1C[97m[48;5;242mi[m[24;65H59[2;59H[?25h[?25l[1C[97m[48;5;242m.g[m[24;66H7[2;57H[?25h[?25l[1C[97m[48;5;242m8[m[24;66H6[2;56H[?25h[?25l[1C[97m[48;5;242mb[m[24;66H5[2;55H[?25h[?25l[1C[97m[48;5;242mla[m[24;66H3[2;53H[?25h[?25l[24;53H1[3;1H[2;54H[97m[101mlab8.git[m[2;62H[K[3;1H[K[24;63H3,0-1[3;1H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[24;53H2[2;9H[1C[97m[48;5;242mote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[48;5;242m 
+ [m[24;63H2,9  [2;9H[?25h[?25l[1C[97m[48;5;242mm[m[24;65H8[2;8H[?25h[?25l[1C[97m[48;5;242me[m[24;65H7[2;7H[?25h[?25l[1C[97m[48;5;242mr[m[24;65H6[2;6H[?25h[?25l[1C[97m[48;5;242m/[m[24;65H5[2;5H[?25h[?25l[1C[97m[48;5;242m/[m[24;65H4[2;4H[?25h[?25l[1C[97m[48;5;242m:[m[24;65H3[2;3H[?25h[?25l[1C[97m[48;5;242mh[m[24;65H2[2;2H[?25h[?25l[1C[97m[48;5;242ms[m[24;65H1[2;1H[?25h[?25l[?25h[?25l[24;53H~@k[2;1H[24;53H3  [1;24H
+[97m[48;5;242ms[m[24;63H1,24[1;24H[?25h[?25l[24;53H~@k[1;24H[24;53H3  [1;23H[1C[48;5;242m [m[24;66H3[1;23H[?25h[?25l[24;53H~@k[1;23H[24;53H3  [1;22H[1C[93m[48;5;242mf[m[24;66H2[1;22H[?25h[?25l[24;53H~@k[1;22H[24;53H3  [1;21H[1C[93m[48;5;242mo[m[24;66H1[1;21H[?25h[?25l[24;53H~@k[1;21H[24;53H3  [1;20H[1C[93m[48;5;242m [m[24;66H0[1;20H[?25h[?25l[24;53H~@k[1;20H[24;53H3  [1;19H[1C[93m[48;5;242m'[m[24;65H19[1;19H[?25h[?25l[24;53H~@k[1;19H[24;53H3  [1;18H[1C[93m[48;5;242mr[m[24;66H8[1;18H[?25h[?25l[24;53H~@k[1;18H[24;53H3  [1;17H[1C[93m[48;5;242me[m[24;66H7[1;17H[?25h[?25l[24;53H~@k[1;17H[24;53H3  [1;16H[1C[93m[48;5;242mt[m[24;66H6[1;16H[?25h[?25l[24;53H~@k[1;16H[24;53H3  [1;15H[1C[93m[48;5;242ms[m[24;66H5[1;15H[?25h[?25l[24;53H~@k[1;15H[24;53H3  [1;14H[1C[93m[48;5;242ma[m[24;66H4[1;14H[?25h[?25l[24;53H~@k[1;14H[24;53H3  [1;13H[1C[93m[48;5;242mm[m[24;66H3[1;13H[?25h[?25l[24;53H~@k[1;13H[24;53H3  [1;12H[1C[93m[48;5;242m'[m[24;66H2[1;12H[?25h[?25l[24;53H~@k[1;12H[24;53H3  [1;11H[1C[93m[48;5;242m [m[24;66H1[1;11H[?25h[?25l[24;53H~@k[1;11H[24;53H3  [1;10H[1C[93m[48;5;242mh[m[24;66H0[1;10H[?25h[?25l[24;53H~@k[1;10H[24;53H3  [1;9H[1C[93m[48;5;242mc[m[24;65H9 [1;9H[?25h[?25l[24;53H~@k[1;9H[24;53H3  [1;8H[1C[93m[48;5;242mn[m[24;65H8[1;8H[?25h[?25l[24;53H~@k[1;8H[24;53H3  [1;7H[1C[93m[48;5;242ma[m[24;65H7[1;7H[?25h[?25l[24;53H~@k[1;7H[24;53H3  [1;6H[1C[93m[48;5;242mr[m[24;65H6[1;6H[?25h[?25l[24;53H~@k[1;6H[24;53H3  [1;5H[1C[93m[48;5;242mb[m[24;65H5[1;5H[?25h[?25l[24;53H~@k[1;5H[24;53H3  [1;4H[1C[93m[48;5;242m [m[24;65H4[1;4H[?25h[?25l[24;53H~@k[1;4H[24;53H3  [1;3H[1C[93m[48;5;242me[m[24;65H3[1;3H[?25h[?25l[24;53H~@k[1;3H[24;53H3  [1;2H[1C[93m[48;5;242mg[m[24;65H2[1;2H[?25h[?25l[24;53H~@k[1;2H[24;53H3  [1;1H[1C[93m[48;5;242mr[m[24;65H1[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H3  [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H3  [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H3  [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H3  [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H3  [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H3  [1;1H[?25h[?25l[24;53H^M[1;1H[24;53H2 [2;1H[1;2H[93mrge branch 'master' of[m[1;24H[K[2;1H[97m[101ms[m[24;63H2[2;1H[?25h[?25l[24;53H^M[2;1H[24;53H1 [3;1H[2;2H[97m[101msh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[2;62H[K[3;1H[K[24;63H3,0-1[3;1H[?25h[?25l[24;53H^M[3;1H[24;53H2 [4;1H[3;1H[48;5;242m [m[24;63H4[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H1  [3;1H[3;1H[K[24;63H3[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H2  [4;1H[3;1H[48;5;242m [m[24;63H4[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H2  [4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H1  [3;1H[3;1H[K[24;63H3[3;1H[?25h[?25l[24;53H^M[3;1H[24;53H2 [4;1H[3;1H[48;5;242m [m[24;63H4[4;1H[?25h[?25l[24;53H^M[4;1H[24;53H3 [5;1H[4;1H[48;5;242m [m[24;63H5,1  [5;1H[?25h[?25l[24;53Hg[5;1H[?25h[?25l[24;53H3[5;1H[24;54Hgb[5;1H[24;54H  [5;1H[?25h[?25l[24;53Hn[5;1H[24;1H[97m[41mE35: No previous regular expression[m[24;53H[K[5;1H[?25h[?1006l[?1002l[?2004l[?1006h[?1002h[?2004h[?25l[24;1H[1m-- (insert) VISUAL --recording @a[m[24;34H[K[24;63H5,1[11CAll[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H2  [4;1H[4;1H[K[24;63H4,0-1[4;1H[?25h[?25l[24;53Hv[4;1H[24;53H [4;1H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H4,1[11CAll[3;1H[K[4;1H[?25h[?25lf[24;65H2[4;2H[?25h[?25l[4;1H[K[24;65H1[4;1H[?25h[?25l[3;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25lf[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25l[2;23r[23;1H
+[1;24r[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,62[10CAll[2;62H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25lv[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25l[2;23r[23;1H
+[1;24r[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,62[10CAll[2;62H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25l-[24;65H2[3;2H[?25h[?25l-[24;65H3[3;3H[?25h[?25l[24;65H4[3;4H[?25h[?25l[24;65H3[3;3H[?25h[?25l[3;2H[K[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25lm[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25ld[24;65H2[3;2H[?25h[?25lo[24;65H3[3;3H[?25h[?25l[3;2H[K[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25le[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25l[2;23r[23;1H
+[1;24r[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,62[10CAll[2;62H[?25h[?25l[97m[101mq[m[24;66H3[2;63H[?25h[?25l[2;62H[K[24;66H2[2;62H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25lq[24;65H2[3;2H[?25h[?25la[24;65H3[3;3H[?25h[?25l![24;65H4[3;4H[?25h[?25l[4;23r[4;1H[L[1;24r[24;63H[K[24;63H4,1[11CAll[4;1H[?25h[?25l[3;23r[23;1H
+[1;24r[3;1Hqa![23;1H[94m~                                                                               [m[24;63H[K[24;63H3,4[11CAll[3;4H[?25h[?25l[3;3H[K[24;65H3[3;3H[?25h[?25l[3;2H[K[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25ldc[24;65H3[3;3H[?25h[?25l[3;2H[K[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25l[2;23r[23;1H
+[1;24r[2;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,62[10CAll[2;62H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?25h[?25l[24;63H6,2[6;2H[?25h[?25l[24;63H8,10[8;10H[?25h[?25l[24;63H7,26[7;26H[?25h[?25l[24;4H[1m(insert)- VISUALi -- recording @a[m[24;63H[K[24;53H2[7;27H[24;63H7,27[10CAll[7;26H[96m[48;5;242m [?25h[?25l[m[24;53H3[7;28H[96m[48;5;242mw[m[24;66H8[7;28H[?25h[?25l[24;53H4[7;29H[96m[48;5;242mi[m[24;66H9[7;29H[?25h[?25l[24;53H5[7;30H[96m[48;5;242ml[m[24;65H30[7;30H[?25h[?25l[24;53H7[7;32H[96m[48;5;242ml [m[24;66H2[7;32H[?25h[?25l[24;53H10[7;35H[96m[48;5;242mbe [m[24;66H5[7;35H[?25h[?25l[24;54H2[7;37H[96m[48;5;242mig[m[24;66H7[7;37H[?25h[?25l[24;54H3[7;38H[96m[48;5;242mn[m[24;66H8[7;38H[?25h[?25l[24;54H5[7;40H[96m[48;5;242mor[m[24;65H40[7;40H[?25h[?25l[24;54H6[7;41H[96m[48;5;242me[m[24;66H1[7;41H[?25h[?25l[24;54H7[7;42H[96m[48;5;242md[m[24;66H2[7;42H[?25h[?25l[?25h[?25l[24;53H  [8;10H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H8,10[10CAll[7;26H[96m will be ignored[8;10H[?25h[?25l[m[24;63H3,1 [3;1H[?25h[?25l[24;63H8,10[8;10H[?25h[?25l[24;4H[1m(insert)- VISUALi -- recording @a[m[24;63H[K[24;53H1[8;10H[24;63H8,10[10CAll[8;10H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[24;53H2[8;9H[1C[48;5;242m [m[24;65H9 [8;9H[?25h[?25l[24;53H4[8;7H[1C[96m[48;5;242mt.[m[24;65H7[8;7H[?25h[?25l[24;53H5[8;6H[1C[96m[48;5;242mi[m[24;65H6[8;6H[?25h[?25l[24;53H6[8;5H[1C[96m[48;5;242mm[m[24;65H5[8;5H[?25h[?25l[24;53H7[8;4H[1C[96m[48;5;242mm[m[24;65H4[8;4H[?25h[?25l[?25h[?25l[24;53H [3;1H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H3,1[11CAll[8;5H[96mmmit.[m[8;10H[K[3;1H[?25h[?25l[24;63H8,10[8;10H[?25h[?25l[24;65H9 [8;9H[?25h[?25l[24;65H10[8;10H[?25h[?25l[9;1H[K[24;63H9,1 [9;1H[?25h[?25l[10;1H[K[24;63H10,1[10;1H[?25h[?25l[11;1H[K[24;64H1[11;1H[?25h[?25l[12;1H[K[24;64H2[12;1H[?25h[?25l[13;1H[K[24;64H3[13;1H[?25h[?25l[14;1H[K[24;64H4[14;1H[?25h[?25l[15;1H[K[24;64H5[15;1H[?25h[?25l[16;1H[K[24;64H6[16;1H[?25h[?25l[17;1H[K[24;64H7[17;1H[?25h[?25l[18;1H[K[24;64H8[18;1H[?25h[?25l[19;1H[K[24;64H9[19;1H[?25h[?25l[20;1H[K[24;63H20[20;1H[?25h[?25l[21;1H[K[24;64H1[21;1H[?25h[?25l[22;1H[K[24;64H2[22;1H[?25h[?25l[23;1H[K[24;64H3[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H24,1[10CBot[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H25,1[10CBot[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H26,1[10CBot[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H27,1[10CBot[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H28,1[10CBot[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H29,1[10CBot[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H30,1[10CBot[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H31,1[10CBot[23;1H[?25h[?25l[94m~                                                                               [m[24;64H0[22;1H[?25h[?25l[94m~                                                                               [m[24;63H29[21;1H[?25h[?25l[94m~                                                                               [m[24;64H8[20;1H[?25h[?25l[94m~                                                                               [m[24;64H7[19;1H[?25h[?25l[94m~                                                                               [m[24;64H6[18;1H[?25h[?25l[94m~                                                                               [m[24;64H5[17;1H[?25h[?25l[94m~                                                                               [m[24;64H4[16;1H[?25h[?25l[94m~                                                                               [m[24;64H3[15;1H[?25h[?25l[94m~                                                                               [m[24;64H2[14;1H[?25h[?25l[94m~                                                                               [m[24;64H1[13;1H[?25h[?25l[94m~                                                                               [m[24;64H0[12;1H[?25h[?25l[94m~                                                                               [m[24;63H19[11;1H[?25h[?25l[94m~                                                                               [m[24;64H8[10;1H[?25h[?25l[94m~                                                                               [m[24;64H7[9;1H[?25h[?25l[94m~                                                                               [m[24;64H6[8;1H[?25h[?25l[94m~                                                                               [m[24;64H5[7;1H[?25h[?25l[94m~                                                                               [m[24;64H4[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# commit.[m[7;1H[94m~                                                                               [m[24;63H[K[24;63H13,1[10CBot[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Lines starting with '#' will be ignored, and an empty message aborts[m[7;1H[94m~                                                                               [m[24;63H[K[24;63H12,1[10CBot[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m#[m[7;1H[94m~                                                                               [m[24;63H[K[24;63H11,1[10CBot[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# especially if it merges an updated upstream into a topic branch.[m[7;1H[94m~                                                                               [m[24;63H[K[24;63H10,1[10CBot[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[96m# Please enter a commit message to explain why this merge is necessary,[m[7;1H[94m~                                                                               [m[24;63H[K[24;63H9,1[11CBot[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[7;1H[94m~                                                                               [m[24;63H[K[24;63H8,10[10CBot[6;10H[?25h[?25l[6;9H[K[24;65H9 [6;9H[?25h[?25l[6;8H[K[24;65H8[6;8H[?25h[?25l[6;7H[K[24;65H7[6;7H[?25h[?25l[6;6H[K[24;65H6[6;6H[?25h[?25l[6;5H[K[24;65H5[6;5H[?25h[?25l[6;4H[K[24;65H4[6;4H[?25h[?25l[6;3H[K[24;65H3[6;3H[?25h[?25l[6;2H[K[24;65H2[6;2H[?25h[?25l[6;1H[K[24;65H1[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[97m[101mssh://remote.cs.binghamton.edu/home/rimai1/git-repos/lab8.git[m[7;1H[94m~                                                                               [m[24;63H[K[24;63H7,71[10CBot[6;71H[?25h[?25l[6;70H[K[24;66H0[6;70H[?25h[?25l[6;69H[K[24;65H69[6;69H[?25h[?25l[6;68H[K[24;66H8[6;68H[?25h[?25l[6;67H[K[24;66H7[6;67H[?25h[?25l[6;66H[K[24;66H6[6;66H[?25h[?25l[6;65H[K[24;66H5[6;65H[?25h[?25l[6;64H[K[24;66H4[6;64H[?25h[?25l[6;63H[K[24;66H3[6;63H[?25h[?25l[6;62H[K[24;66H2[6;62H[?25h[?25l[6;61H[K[24;66H1[6;61H[?25h[?25l[6;60H[K[24;66H0[6;60H[?25h[?25l[6;59H[K[24;65H59[6;59H[?25h[?25l[6;58H[K[24;66H8[6;58H[?25h[?25l[6;57H[K[24;66H7[6;57H[?25h[?25l[6;56H[K[24;66H6[6;56H[?25h[?25l[6;55H[K[24;66H5[6;55H[?25h[?25l[6;54H[K[24;66H4[6;54H[?25h[?25l[6;53H[K[24;66H3[6;53H[?25h[?25l[6;52H[K[24;66H2[6;52H[?25h[?25l[6;51H[K[24;66H1[6;51H[?25h[?25l[6;50H[K[24;66H0[6;50H[?25h[?25l[6;49H[K[24;65H49[6;49H[?25h[?25l[6;48H[K[24;66H8[6;48H[?25h[?25l[6;47H[K[24;66H7[6;47H[?25h[?25l[6;46H[K[24;66H6[6;46H[?25h[?25l[6;45H[K[24;66H5[6;45H[?25h[?25l[6;44H[K[24;66H4[6;44H[?25h[?25l[6;43H[K[24;66H3[6;43H[?25h[?25l[6;42H[K[24;66H2[6;42H[?25h[?25l[6;41H[K[24;66H1[6;41H[?25h[?25l[6;40H[K[24;66H0[6;40H[?25h[?25l[6;39H[K[24;65H39[6;39H[?25h[?25l[6;38H[K[24;66H8[6;38H[?25h[?25l[6;37H[K[24;66H7[6;37H[?25h[?25l[6;36H[K[24;66H6[6;36H[?25h[?25l[6;35H[K[24;66H5[6;35H[?25h[?25l[6;34H[K[24;66H4[6;34H[?25h[?25l[6;33H[K[24;66H3[6;33H[?25h[?25l[6;32H[K[24;66H2[6;32H[?25h[?25l[6;31H[K[24;66H1[6;31H[?25h[?25l[6;30H[K[24;66H0[6;30H[?25h[?25l[6;29H[K[24;65H29[6;29H[?25h[?25l[6;28H[K[24;66H8[6;28H[?25h[?25l[6;27H[K[24;66H7[6;27H[?25h[?25l[6;26H[K[24;66H6[6;26H[?25h[?25l[6;25H[K[24;66H5[6;25H[?25h[?25l[6;24H[K[24;66H4[6;24H[?25h[?25l[6;23H[K[24;66H3[6;23H[?25h[?25l[6;22H[K[24;66H2[6;22H[?25h[?25l[6;21H[K[24;66H1[6;21H[?25h[?25l[6;20H[K[24;66H0[6;20H[?25h[?25l[6;19H[K[24;65H19[6;19H[?25h[?25l[6;18H[K[24;66H8[6;18H[?25h[?25l[6;17H[K[24;66H7[6;17H[?25h[?25l[6;16H[K[24;66H6[6;16H[?25h[?25l[6;15H[K[24;66H5[6;15H[?25h[?25l[6;14H[K[24;66H4[6;14H[?25h[?25l[6;13H[K[24;66H3[6;13H[?25h[?25l[6;12H[K[24;66H2[6;12H[?25h[?25l[6;11H[K[24;66H1[6;11H[?25h[?25l[6;10H[K[24;66H0[6;10H[?25h[?25l[6;9H[K[24;65H9 [6;9H[?25h[?25l[6;8H[K[24;65H8[6;8H[?25h[?25l[6;7H[K[24;65H7[6;7H[?25h[?25l[6;6H[K[24;65H6[6;6H[?25h[?25l[6;5H[K[24;65H5[6;5H[?25h[?25l[6;4H[K[24;65H4[6;4H[?25h[?25l[6;3H[K[24;65H3[6;3H[?25h[?25l[6;2H[K[24;65H2[6;2H[?25h[?25l[6;1H[K[24;65H1[6;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[93merge branch 'master' of[m[7;1H[94m~                                                                               [m[24;63H[K[24;63H6,2[11CAll[6;2H[?25h[?25l[6;1H[K[24;65H1[6;1H[?25h[?25l[94m~                                                                               [m[24;63H5,67[5;67H[?25h[?25l[24;63H3,1 [3;1H[?25h[?25l[24;4H[1m(insert)- VISUALi -- recording @a[m[24;63H[K[24;63H3,0-1[9CAll[3;1H[?25h[?25l[24;53H1[3;1H[?25h[?25l[24;53H [5;14H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H5,14[10CAll[5;14H[?25h[?25l[24;4H[1m(insert)- VISUALi -- recording @a[m[24;63H[K[24;53H2[5;13H[24;63H5,13[10CAll[5;14H[96m[48;5;242mi[?25h[?25l[?25h[?25l[m[24;53H3[5;12H[1C[96m[48;5;242m [m[24;66H2[5;12H[?25h[?25l[?25h[?25l[?25h[?25l[24;53H4[5;11H[1C[96m[48;5;242my[m[24;66H1[5;11H[?25h[?25l[?25h[?25l[24;53H5[5;10H[1C[96m[48;5;242ml[m[24;66H0[5;10H[?25h[?25l[24;53H6[5;9H[1C[96m[48;5;242ml[m[24;65H9 [5;9H[?25h[?25l[?25h[?25l[24;53H [5;8H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H5,8[11CAll[5;10H[96mlly i[5;8H[?25h[?25l[m[24;63H2,6[2;6H[?25h[?25l[24;63H3,1[3;1H[?25h[?25l[24;63H2[2;1H[?25h[?25l[1;24H[93mssh://remote.cs.binghamton.[medu/home/rimai1/git-repos/lab88[2;1H.git[2;5H[K[24;63H1,24[1;24H[?25h[?25l[93m ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/labb[2;1H8.git[24;66H5[1;25H[?25h[?25l[24;65H33[1;33H[?25h[?25l[24;65H5[1;53H[?25h[?25l[24;66H1[1;51H[?25h[?25l[24;65H86[2;6H[?25h[?25l[24;63H2,1 [3;1H[?25h[?25l[97m[101mx[m[24;65H2[3;2H[?25h[?25l[97m[101ms[m[24;65H3[3;3H[?25h[?25l[3;2H[K[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25l[97m[101ml[m[24;65H2[3;2H[?25h[?25l[97m[101ma[m[24;65H3[3;3H[?25h[?25l[97m[101mb[m[24;65H4[3;4H[?25h[?25l[97m[101m8[m[24;65H5[3;5H[?25h[?25l[4;23r[4;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[4;1H[?25h[?25l[3;23r[23;1H
+[1;24r[3;1H[97m[101mlab8[m[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,5[11CAll[3;5H[?25h[?25l[3;4H[K[24;65H4[3;4H[?25h[?25l[3;3H[K[24;65H3[3;3H[?25h[?25l[3;2H[K[24;65H2[3;2H[?25h[?25l[3;1H[K[24;65H1[3;1H[?25h[?25l[1;23r[23;1H
+[1;24r[1;1H[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/labb[2;1H8.git[23;1H[94m~                                                                               [m[24;63H[K[24;63H1,86[10CAll[2;6H[?25h[?25l[3;23r[3;1H[L[1;24r[24;63H[K[24;63H2,1[11CAll[3;1H[?25h[?25l[24;4H[1m(insert)- VISUALi -- recording @a[m[24;63H[K[24;53H1[3;1H[24;63H2,0-1[9CAll[3;1H[?25h[?25l[?25h[?25l[24;53H [5;18H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H4,18[10CAll[5;18H[?25h[?25l[24;4H[1m(insert)- VISUALi -- recording @a[m[24;63H[K[24;53H2[5;17H[24;63H4,17[10CAll[5;18H[96m[48;5;242mt[?25h[?25l[m[24;53H3[5;16H[1C[96m[48;5;242mi[m[24;66H6[5;16H[?25h[?25l[24;53H [5;16H[?25h[?25l[24;53H3[5;16H[?25h[?25l[24;53H [2;6H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H1,86[10CAll[5;17H[96mit[2;6H[?25h[?25l[m[24;63H3,11[4;11H[?25h[?25l[96m[48;5;242mente[m[24;11H[1mVISUALr --nrecording @a[m[24;63H[K[24;53H5[4;14H[24;63H3,14[10CAll[4;14H[?25h[?25l[24;4H[1m(insert)I VISUAL- --crecordinga @a[m[24;53H[K[24;53H5[4;14H[24;63H3,14[10CAll[4;14H[?25h[?25l[96me[m[96m[48;5;242mr[m[24;67H-13[4;14H[?25h[?25l[96m[48;5;242me[m[96mr[m[24;67H   [4;14H[?25h[?25l[24;53H2[5;15H[4;14H[96m[48;5;242mr a commit message to explain why this merge is necessary,[m[48;5;242m [m
+[96m[48;5;242m# especially i[m[24;63H4,15[5;15H[?25h[?25l[3C[96m[48;5;242mf i[m[24;66H8[5;18H[?25h[?25l[?25h[?25l[7C[5;18H[96m[48;5;242mt merge[m[24;65H25[5;25H[?25h[?25l[96mr[m[2C[96m[48;5;242ms[m[24;67H-22[5;25H[?25h[?25l[1C[96m[48;5;242mr[m[24;66H6   [5;26H[?25h[?25l[2C[96m[48;5;242m a[m[24;66H8[5;28H[?25h[?25l[8C[5;28H[96m[48;5;242mn update[m[24;65H36[5;36H[?25h[?25l[96md[m[3C[96m[48;5;242md[m[24;67H-32[5;36H[?25h[?25l[96m[48;5;242md[m[96ma[m[24;69H3[5;36H[?25h[?25l[96m[48;5;242ma[m[96mt[m[24;69H4[5;36H[?25h[?25l[96m[48;5;242mt[m[96me[m[24;69H5[5;36H[?25h[?25l[96m[48;5;242me[m[96md[m[24;67H   [5;36H[?25h[?25l[1C[96m[48;5;242md[m[24;66H7[5;37H[?25h[?25l[8C[5;37H[96m[48;5;242m upstrea[m[24;65H45[5;45H[?25h[?25l[?25h[?25l[24;53H [5;37H[24;4H[1mINSERTt --recordingr @ao[m[24;25H[K[24;63H4,37[10CAll[4;10H[96menter a commit message to explain why this merge is necessary,[m[4;72H[K[5;1H[96m# especially if it merges an updated upstrea[5;37H[?25h[?25l[m[24;63H1,86[2;6H[?25h[?25l[24;63H2,1 [3;1H[?25h[?25l[24;63H1[1;1H[?25h[?25l[93m,erge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/rimai1/git-repos/laa[2;1Hb8.git[24;65H2[1;2H[?25h[?25l[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/labb[2;1H8.git[2;6H[K[24;65H1[1;1H[?25h[?25l[93mmerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/rimai1/git-repos/laa[2;1Hb8.git[24;65H2[1;2H[?25h[?25l[93merge branch 'master' of ssh://remote.cs.binghamton[m.edu/home/rimai1/git-repos/labb[2;1H8.git[2;6H[K[24;65H1[1;1H[?25h[?25l[24;63H2[3;1H[?25h[?25l[4;23r[4;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[4;1H[?25h[?25l[3;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;63H[K[24;63H2,1[11CAll[3;1H[?25h[?25l[24;63H1[1;1H[?25h[?25l[93mierge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/rimai1/git-repos/laa[2;1Hb8.git[24;65H2[1;2H[?25h[?25l[93mMerge branch 'master' of ssh://remote.cs.binghamt[mon.edu/home/rimai1/git-repos/ll[2;1Hab8.git[24;65H3[1;3H[?25h[?25l[24;65H2[1;2H[?25h[?25l[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/rimai1/git-repos/laa[2;1Hb8.git[2;7H[K[24;65H1[1;1H[?25h[24;1H[1mrecording @ar[m[24;13H[K[1;1H[?25l[24;53H^[[1;1H[24;53H  [1;1H[24;63H1,1[11CAll[1;1H[?25h[?25l[24;53HZ[1;1H[?25h[?25l[24;54HZ[1;1H[?1006l[?1002l[?2004l[24;1H".git/MERGE_MSG"[24;53H[K[24;18H4L, 227C written]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0t[KMerge made by the 'recursive' strategy.
+ work/lab8/.gitignore |  3 [32m+++[m
+ work/lab8/Makefile   | 10 [32m++++++++++[m
+ work/lab8/README.md  |  4 [32m++++[m
+ work/lab8/hello.c    | 18 [32m++++++++++++++++++[m
+ 4 files changed, 35 insertions(+)
+ create mode 100644 work/lab8/.gitignore
+ create mode 100644 work/lab8/Makefile
+ create mode 100644 work/lab8/README.md
+ create mode 100644 work/lab8/hello.c
+rimai1@g7-34:~/git-repos/i220b$ d[Kcd work/lab8
+rimai1@g7-34:~/git-repos/i220b/work/lab8$ ls
+hello.c  lab8.log  Makefile  README.md
+rimai1@g7-34:~/git-repos/i220b/work/lab8$ git log hello.c
+[?1h=[33mcommit 7b3c3a0ac39d410a22be2d1db134e4dc23dcc916[m[33m ([m[1;31mlab8/master[m[33m)[m[m
+Merge: 8e18652 7703e53[m
+Author: Rei Imai <rimai1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:49:52 2019 -0400[m
+[m
+    merged master[m
+[m
+[33mcommit 7703e53dd84e2705da424e966cbdbd70a46ece11[m[m
+Author: Rei Imai <rimai1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:45:36 2019 -0400[m
+[m
+    added return at end of main()[m
+[m
+[33mcommit 8e1865297890880e0699190af3498c210875d112[m[m
+Author: Rei Imai <rimai1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:42:31 2019 -0400[m
+[m
+    allow greeting multiple names[m
+[m
+[33mcommit da555f930dd2ff869a7897be947e239e12f5360b[m[m
+Author: Rei Imai <rimai1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:38:44 2019 -0400[m
+[m
+:[K[K    send usage message to stderr[m
+:[K[K[m
+:[K[K[33mcommit b3ce02e1c35c9bc68bebea43c0d1e6ce6da68d66[m[m
+:[K[KAuthor: Rei Imai <rimai1@cs.binghamton.edu>[m
+:[K[KDate:   Thu Oct 10 15:30:34 2019 -0400[m
+:[K[K[m
+:[K[K    working: clean compile[m
+:[K[K[m
+:[K[K[33mcommit 355fa8e934f1b9dfe3b8aa2321ee5aacb2f80d6e[m[m
+:[K[KAuthor: Rei Imai <rimai1@cs.binghamton.edu>[m
+:[K[KDate:   Thu Oct 10 15:26:33 2019 -0400[m
+:[K[K[m
+:[K[K    working with warnings[m
+:[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HM    added return at end of main()[m
+[24;1H[K:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K    working with warnings[m
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[?1l>
+rimai1@g7-34:~/git-repos/i220b/work/lab8$ exit
+
+Script done on 2019-10-10 16:02:50-04:00 [COMMAND_EXIT_CODE="130"]
