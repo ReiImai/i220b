@@ -1,0 +1,85 @@
+ex2:
+
+objdump -d mystery.o | grep -A10 mystery.:
+0000000000000000 <mystery>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	89 7d fc             	mov    %edi,-0x4(%rbp)
+   7:	8b 45 fc             	mov    -0x4(%rbp),%eax
+   a:	25 ff ff 7f 00       	and    $0x7fffff,%eax
+   f:	c9                   	leaveq 
+  10:	c3                   	retq   
+
+
+1st, it pushes %rbp to stack
+2nd, copy the value of %rsp to %rbp
+3rd, move %edi into 4 bytes at memory address %rbp
+4th, move 4 bytes at memory address %rbp to %eax
+5th, do (0x7fffff & %eax) bitwise 
+last, leave and return it
+
+-----------------------------------------------------------------
+ex3:
+
+(gdb) p argc
+$1 = 1
+(gdb) p *($rbp - 20)
+Attempt to dereference a generic pointer.
+(gdb) p *(int *)($rbp - 20)
+$2 = 1
+(gdb) p argv
+$3 = (const char **) 0x7fffffffe7c8
+(gdb) p *(const char ***)($rbp - 32)
+$4 = (const char **) 0x7fffffffe7c8
+(gdb) p argv[0]
+$5 = 0x7fffffffeaa6 "/import/linux/home1/rimai1/git-repos/i220b/work/lab9/hello"
+(gdb) p (*(const char ***)($rbp - 0x20))[0]
+$6 = 0x7fffffffeaa6 "/import/linux/home1/rimai1/git-repos/i220b/work/lab9/hello"
+
+
+p (char *)0x55555555600e
+$12 = 0x55555555600e "usage: %s NAME...\n"
+
+p (char *)($rdi)
+$17 = 0x7ffff7f92680 <_IO_2_1_stderr_> "\206 \255", <incomplete sequence \373>
+
+p (char *)($rdx)
+$18 = 0x7fffffffeaa6 "/import/linux/home1/rimai1/git-repos/i220b/work/lab9/hello"
+
+
+-----------------------------------------------------------------
+ex4:
+
+(gdb) disas /m
+Dump of assembler code for function hello:
+7	{
+   0x0000555555555145 <+0>:	push   %rbp
+   0x0000555555555146 <+1>:	mov    %rsp,%rbp
+   0x0000555555555149 <+4>:	sub    $0x10,%rsp
+   0x000055555555514d <+8>:	mov    %rdi,-0x8(%rbp)
+   0x0000555555555151 <+12>:	mov    %rsi,-0x10(%rbp)
+
+8	  fprintf(out, "hello %s\n", who);
+=> 0x0000555555555155 <+16>:	mov    -0x10(%rbp),%rdx
+   0x0000555555555159 <+20>:	mov    -0x8(%rbp),%rax
+   0x000055555555515d <+24>:	lea    0xea0(%rip),%rsi        # 0x555555556004
+   0x0000555555555164 <+31>:	mov    %rax,%rdi
+   0x0000555555555167 <+34>:	mov    $0x0,%eax
+   0x000055555555516c <+39>:	callq  0x555555555030 <fprintf@plt>
+
+9	}
+   0x0000555555555171 <+44>:	nop
+   0x0000555555555172 <+45>:	leaveq 
+   0x0000555555555173 <+46>:	retq   
+
+End of assembler dump.
+
+
+
+(gdb) p  *(const char ***)($rbp - 16)
+$3 = (const char **) 0x7fffffffeadd
+(gdb) p (char *)0x7fffffffeadd
+$4 = 0x7fffffffeadd "joe"
+
+------------------------------------------------------------------ 
+
