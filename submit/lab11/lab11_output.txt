@@ -1,0 +1,117 @@
+ex1.
+
+time ls ~/git-repos/cs220/labs/lab11/files
+coverage  int-search  matmul-cache  parity
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.003s
+
+
+time sleep 5
+
+real	0m5.004s
+user	0m0.002s
+sys	0m0.001s
+
+
+time wc -l 'find /etc -type f 2>/dev/null' 2>/dev/null | tail
+
+real	0m0.005s
+user	0m0.003s
+sys	0m0.003s
+
+----------------------------------------------------------------------------------
+ex2.
+
+time ./parity-c 10000000000
+705003625
+
+real	0m34.410s
+user	0m34.408s
+sys	0m0.000s
+
+time ./parity-s 10000000000
+705029139
+
+real	0m18.147s
+user	0m18.101s
+sys	0m0.044s
+
+----------------------------------------------------------------------------------
+ex3.
+
+for (int k = 0; k < n; k++) {
+	c[i][j] += a[i][k]*b[j][k];
+      }
+
+//transpose b[][]
+//and change it to row-wise.
+
+
+
+./simple-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+
+./transpose-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+
+time ./transpose-matmul 1500 1
+
+real	0m8.614s
+user	0m8.541s
+sys	0m0.072s
+
+time ./simple-matmul 1500 1
+Segmentation fault
+
+real	0m0.046s
+user	0m0.037s
+sys	0m0.009s
+
+-------------------------------------------------------------------------------------
+ex4.
+
+time ./linear-search 2000 2000
+
+real	0m6.718s
+user	0m6.716s
+sys	0m0.000s
+
+time ./binary-search 2000 2000
+
+real	0m0.345s
+user	0m0.340s
+sys	0m0.004s
+
+//binary search so much faster
+
+-------------------------------------------------------------------------------------
+ex5. 
+
+gcov coverage.gcda
+coverage.c:source file is newer than notes file 'coverage.gcno'
+(the message is displayed only once per source file)
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+
+//8 sets of value a,b,c
+
+
+
+
+
+
+
+
+
+
+

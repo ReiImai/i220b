@@ -1,0 +1,158 @@
+Script started on 2019-10-24 14:45:53-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10$ gedit lab10[K[K10/ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_ outpurs[K[Kt.s[K[K[Ks[Kts[K.tc[Kxt &
+[1] 22550
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10$ 
+(gedit:22550): Gtk-[1;33mWARNING[0m **: [34m14:46:41.066[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10$ cd rotate.[K
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/rotate$ cd [K[K[Kgedit  rto[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl s
+bash: gedils: command not found
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/rotate$ ls
+Makefile  rotate.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/rotate$ cd [K[K[Kgedit  o[Krotae[Kte.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/rotate$ [Krimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/rotate$ make
+cc -S -Wall -Og -std=c11 rotate.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/rotate$ c[Kls
+Makefile  rotate.c  rotate.s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/rotate$ gei[Kdit t[Krotate.s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/rotate$ cd ..
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10$ cd [K[K[Kcd cpuid1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid1$ ls
+cpuid.s  main.c  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid1$ x==[K[K[Kgedit cpuid.s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid1$ gedit main.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid1$ m[Kmake
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid1$ ;s[K[Kls
+cpuid  cpuid.o	cpuid.s  main.c  main.o  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid1$ ./cpuid
+cpuid: eax = 0xd; ebx = 0x756e6547; edx = 0x49656e69; ecx = 0x6c65746e
+vendor: GenuineIntel
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid1$ ged[K[K[Kcd ..
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10$ cd cpuid2
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ;s
+bash: syntax error near unexpected token `;'
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ls
+cpuid.s  main.c  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ gedit ,aom[K[K[K[Kmain.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ gedit co[Kpuid.s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ gedit cpuid.s[1Pmain.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:8: Error: operand type mismatch for `xor'
+make: *** [Makefile:9: cpuid.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:8: Error: unsupported instruction `mov'
+make: *** [Makefile:9: cpuid.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./make[K[K[K[Kls
+cpuid  cpuid.o	cpuid.s  main.c  main.o  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cquid
+bash: ./cquid: No such file or directory
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ /[K./cpuid
+usage: ./cpuid CPUID_OP
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1[K7
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 71[Kquidls[Kmake
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:8: Error: number of operands mismatch for `push'
+make: *** [Makefile:9: cpuid.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make./cpuid 7[K
+usage: ./cpuid CPUID_OP
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1[K0x0A
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 0x0A[K[K80000004
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 0x800000040A[K1[K[K[4Pmake
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+/usr/bin/ld: cpuid.o: relocation R_X86_64_32S against undefined symbol `s1' can not be used when making a PIE object; recompile with -fPIC
+/usr/bin/ld: final link failed: nonrepresentable section on output
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:6: cpuid] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make./cpuid 0x800000040A[K[K[K[K[K[K
+usage: ./cpuid CPUID_OP
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1[K[3Pmake
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make./cpuid 1
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1[K[K
+usage: ./cpuid CPUID_OP
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1[5Pmake
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:8: Error: operand type mismatch for `push'
+make: *** [Makefile:9: cpuid.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:8: Error: operand type mismatch for `movq'
+make: *** [Makefile:9: cpuid.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make./cpuid 1
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1[K
+usage: ./cpuid CPUID_OP
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1[5Pmake
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:8: Error: operand type mismatch for `lea'
+make: *** [Makefile:9: cpuid.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:8: Error: operand size mismatch for `lea'
+make: *** [Makefile:9: cpuid.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make./cpuid 
+usage: ./cpuid CPUID_OP
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid [4Pmake./cpuid 1
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1[K[4Pmake
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make./cpuid 1
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ ./cpuid 1[5Pmake
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ make./cpuid 1
+Segmentation fault
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab10/cpuid2$ de[K[Kexit
+
+Script done on 2019-10-24 16:18:24-04:00 [COMMAND_EXIT_CODE="139"]

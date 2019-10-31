@@ -1,0 +1,431 @@
+Script started on 2019-10-31 14:56:13-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="94" LINES="23"]
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ ls
+coverage  int-search  lab11.log  matmul-cache  parity
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ po[K[Ktime ls ![Kt[K~/git-repos/cs220/ labs/lab11/files
+coverage  int-search  matmul-cache  parity
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.003s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ time sleep [K[K[K[K[K[K[K[K[K[K[Ks[Kc[Klab11[K[K[K[K[Kgd[Kedit lab11.o[K[Kout[K[K[K[K1_outpuit[K[Kt.txt $[K&
+[1] 7103
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ 
+** (gedit:7103): [1;33mWARNING[0m **: [34m14:59:53.429[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:7103): [1;33mWARNING[0m **: [34m14:59:53.611[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:7103): [1;33mWARNING[0m **: [34m14:59:53.611[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:7103): [1;33mWARNING[0m **: [34m14:59:53.611[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:7103): [1;33mWARNING[0m **: [34m14:59:53.627[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:7103): [1;33mWARNING[0m **: [34m14:59:53.627[0m: AT-SPI: Could not obtain desktop path or name
+
+
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ 
+(gedit:7103): Gtk-[1;33mWARNING[0m **: [34m15:00:02.442[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ time sleep time [K[K[K[K[K[K 5
+
+real	0m5.004s
+user	0m0.002s
+sys	0m0.001s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ tom[K[Kime wc [K[Kc -1[Kl "[K'find /etx[Kc -typ e f 2>/dev/null' 2?[K>/dev/null | tail
+
+real	0m0.005s
+user	0m0.003s
+sys	0m0.003s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ time wc -l 'find /etc -type f 2>/dev/null' 2>/dev/null | tail
+
+real	0m0.003s
+user	0m0.002s
+sys	0m0.002s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ time wc -l 'find /etc -type f 2>/dev/null' 2>/dev/null | tail
+
+real	0m0.003s
+user	0m0.004s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ time wc -l 'find /etc -type f 2>/dev/null' 2>/dev/null | tail
+
+real	0m0.004s
+user	0m0.002s
+sys	0m0.002s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ ls
+coverage  int-search  lab11.log  lab11_output.txt  matmul-cache  parity
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ cd parity
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ ls
+main.c	Makefile  parity-c.c  parity-s.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ gee[Kdit main.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ geit [K[K[Kdit parity [K-c.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ part[Kitt[K[K[K[K[K[Kgedit parity-s.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ make
+cc -g -Wall -std=c11 -O1   -c -o parity-c.o parity-c.c
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc   parity-c.o main.o   -o parity-c
+cc -g -Wall -std=c11 -O1   -c -o parity-s.o parity-s.c
+cc   parity-s.o main.o   -o parity-s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ ./parity-c -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ ./part[Kity-s -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ tim e[K[Ke sleep 5
+
+real	0m5.003s
+user	0m0.002s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time parity.c.[K[K[K-c.s
+bash: parity-c.s: command not found
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time parity-c.s[Kc
+bash: parity-c.c: command not found
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time parity-c.c[K[K[Ks.c
+bash: parity-s.c: command not found
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time -p [K[K[K[K ./[a[K[Kparti[K[Kity.[K-s[Kc.c 1 0
+bash: ./parity-c.c: Permission denied
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time ./parity-c.c 10[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Ks.c 1 0
+bash: ./parity-s.c: Permission denied
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time ./parity-s.c 10[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc
+[C[K0000000
+bash: ./parity-c.c: Permission denied
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time ./parity-c.c 100000000000
+bash: ./parity-c.c: Permission denied
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time ./parity-c.c 100000000000[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs
+[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc
+[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs
+[C0000000000
+bash: ./parity-s.c: Permission denied
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$  [Ktime pat[Krity-c.c 10
+bash: parity-c.c: command not found
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ r[Kr[K./tim[K[K[K[K[Ktim [Ke pariy[Kty [K-c 10
+bash: parity-c: command not found
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time ./ps[Karity-c 10
+3
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ timee[K ./parity-s 10
+3
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time ./parity-s 10c[C[C[C[2P[C[C[C[C[C[C[C[C[C[C[C[2@./[C[C[C[C[C[C[C[C[C[C[Cs[C[C[Cc[C[C[C0 00000000[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K100 00000000
+705003625
+
+real	0m34.410s
+user	0m34.408s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ time ./parity-c 10000000000[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 10000[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs 1000[C[C[C[C[C[C0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+705029139
+
+real	0m18.147s
+user	0m18.101s
+sys	0m0.044s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/parity$ cd ..
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ cd matmul-cache
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ ;s
+bash: syntax error near unexpected token `;'
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ las[K[Ks
+main.c	Makefile  matmul.h  simple-matmul.c  transpose-matmul.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ cd simple-mat mul.c
+bash: cd: simple-matmul.c: Not a directory
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ l[Kls
+main.c	Makefile  matmul.h  simple-matmul.c  transpose-matmul.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ gedit simple- matmul.cc[K
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ cd[K[Kls
+main.c	Makefile  matmul.h  simple-matmul.c  transpose-matmul.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ cd [K[K[Kgedit transpo se[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[Ktranspo se-matmyl[K[Kul.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ cd[K[Kks[K[Kls
+main.c	Makefile  matmul.h  simple-matmul.c  transpose-matmul.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ make
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o simple-matmul.o simple-matmul.c
+[01m[Ksimple-matmul.c:[m[K In function ‘[01m[Kmatrix_multiply[m[K’:
+[01m[Ksimple-matmul.c:6:10:[m[K [01;31m[Kerror: [m[Karray size missing in ‘[01m[Ktemp[m[K’
+   double [01;31m[Ktemp[m[K[][n];
+          [01;31m[K^~~~[m[K
+make: *** [<builtin>: simple-matmul.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ make
+cc -g -Wall -std=c11 -O1   -c -o simple-matmul.o simple-matmul.c
+cc main.o simple-matmul.o  -o simple-matmul
+cc -g -Wall -std=c11 -O1   -c -o transpose-matmul.o transpose-matmul.c
+cc main.o transpose-matmul.o  -o transpose-matmul
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ ./simp[[Kle-matm ul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ ./transposer[K[Ke-[K-m atmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ time ./simple -matmul 1500 1
+Segmentation fault
+
+real	0m0.042s
+user	0m0.033s
+sys	0m0.008s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ time ./transp ose=[K-matmul 15500[K[K[K00 1
+
+real	0m8.614s
+user	0m8.541s
+sys	0m0.072s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ time ./transpose-matmul 1500 1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csimple-[3P[C[C[C[C[C[C[C[C[C[C[C[C[C
+Segmentation fault
+
+real	0m0.046s
+user	0m0.037s
+sys	0m0.009s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ for s in 'seq  1000 500 2500'; \
+> do \
+>   [K[K  echo -n "*** Size $s: simpole[K[K[Kle"l[K; time ./simple/[K-matmul $s 1 l[K; echo ; \
+>   echo -n "*** Ai[K[KSize $sL[K: s[Ktranspl[Kose"; tune[K[K[Kime ./transpose-matmul $s 1 ; echo ; \
+> done
+*** Size seq 1000 500 2500: simpleusage: ./simple-matmul MATRIX_SIZE N_TRIALS
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.000s
+
+*** Size seq 1000 500 2500: transposeusage: ./transpose-matmul MATRIX_SIZE N_TRIALS
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/matmul-cache$ cd ..
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ ls
+coverage  int-search  lab11.log  lab11_output.txt  matmul-cache  parity
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ cd inte[K-search
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ s[Kls
+binary-search.c  int_compare.c	int_compare.h  linear-search.c	main.c	Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ dcd[K[K[Kgedit linear-se arch.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ gedit binary-se arch.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ make
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o int_compare.o int_compare.c
+cc   linear-search.o main.o int_compare.o   -o linear-search
+cc -g -Wall -std=c11 -O1   -c -o binary-search.o binary-search.c
+cc   binary-search.o main.o int_compare.o   -o binary-search
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ ./linear [K-search  100 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ ./linear-search 100 1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls
+binary-search	 binary-search.o  int_compare.h  linear-search	  linear-search.o  main.o
+binary-search.c  int_compare.c	  int_compare.o  linear-search.c  main.c	   Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ ls./linear-search 100 1[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[Klinear [K-search  100 1[K[K 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ time ./linear s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K-s earch 2000 2000
+
+real	0m6.718s
+user	0m6.716s
+sys	0m0.000s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ time ./linear-search 2000 2000[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./linear-search [9P100 1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctime ./linear-search 2000 2000\[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Kbinayr[K[Kry-s earch 2000  2[K[K2000
+
+real	0m0.345s
+user	0m0.340s
+sys	0m0.004s
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ time ./binary-search 2000 2000[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+[01m[Klinear-search.c:[m[K In function ‘[01m[Ksearch_for_element[m[K’:
+[01m[Klinear-search.c:6:9:[m[K [01;31m[Kerror: [m[K‘[01m[KNULL[m[K’ undeclared (first use in this function)
+   if(a==[01;31m[KNULL[m[K || nElements==NULL || element==NULL || nElements<0){
+         [01;31m[K^~~~[m[K
+[01m[Klinear-search.c:6:9:[m[K [01;36m[Knote: [m[K‘[01m[KNULL[m[K’ is defined in header ‘[01m[K<stddef.h>[m[K’; did you forget to ‘[01m[K#include <stddef.h>[m[K’?
+[01m[Klinear-search.c:1:1:[m[K
++[32m[K#include <stddef.h>[m[K
+ /** Return index of element in a[nElements]; < 0 if not found. */
+[01m[Klinear-search.c:6:9:[m[K
+   if(a==[01;36m[KNULL[m[K || nElements==NULL || element==NULL || nElements<0){
+         [01;36m[K^~~~[m[K
+[01m[Klinear-search.c:6:9:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Klinear-search.c:7:7:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K:[m[K’ token
+   std:[01;31m[K:[m[Kcout<<"assertion failure"<<endl;
+       [01;31m[K^[m[K
+[01m[Klinear-search.c:7:3:[m[K [01;35m[Kwarning: [m[Klabel ‘[01m[Kstd[m[K’ defined but not used [[01;35m[K-Wunused-label[m[K]
+   [01;35m[Kstd[m[K::cout<<"assertion failure"<<endl;
+   [01;35m[K^~~[m[K
+make: *** [<builtin>: linear-search.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ make
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+[01m[Klinear-search.c:[m[K In function ‘[01m[Ksearch_for_element[m[K’:
+[01m[Klinear-search.c:9:26:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   if(a==NULL || nElements[01;35m[K==[m[KNULL || element==NULL || nElements<0){
+                          [01;35m[K^~[m[K
+[01m[Klinear-search.c:9:43:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   if(a==NULL || nElements==NULL || element[01;35m[K==[m[KNULL || nElements<0){
+                                           [01;35m[K^~[m[K
+[01m[Klinear-search.c:10:7:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K:[m[K’ token
+   std:[01;31m[K:[m[Kcout<<"assertion failure"<<endl;
+       [01;31m[K^[m[K
+[01m[Klinear-search.c:10:3:[m[K [01;35m[Kwarning: [m[Klabel ‘[01m[Kstd[m[K’ defined but not used [[01;35m[K-Wunused-label[m[K]
+   [01;35m[Kstd[m[K::cout<<"assertion failure"<<endl;
+   [01;35m[K^~~[m[K
+make: *** [<builtin>: linear-search.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ mk[Kake
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+[01m[Klinear-search.c:[m[K In function ‘[01m[Ksearch_for_element[m[K’:
+[01m[Klinear-search.c:9:26:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   if(a==NULL || nElements[01;35m[K==[m[KNULL || element==NULL || nElements<0){
+                          [01;35m[K^~[m[K
+[01m[Klinear-search.c:9:43:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   if(a==NULL || nElements==NULL || element[01;35m[K==[m[KNULL || nElements<0){
+                                           [01;35m[K^~[m[K
+[01m[Klinear-search.c:10:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kfprintf[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   [01;35m[Kfprintf[m[K(stderr, "assertion failure\n");
+   [01;35m[K^~~~~~~[m[K
+[01m[Klinear-search.c:10:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kfprintf[m[K’
+[01m[Klinear-search.c:10:3:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kfprintf[m[K’
+[01m[Klinear-search.c:3:1:[m[K
++[32m[K#include <stdio.h>[m[K
+ 
+[01m[Klinear-search.c:10:3:[m[K
+   [01;36m[Kfprintf[m[K(stderr, "assertion failure\n");
+   [01;36m[K^~~~~~~[m[K
+[01m[Klinear-search.c:10:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstderr[m[K’ undeclared (first use in this function)
+   fprintf([01;31m[Kstderr[m[K, "assertion failure\n");
+           [01;31m[K^~~~~~[m[K
+[01m[Klinear-search.c:10:11:[m[K [01;36m[Knote: [m[K‘[01m[Kstderr[m[K’ is defined in header ‘[01m[K<stdio.h>[m[K’; did you forget to ‘[01m[K#include <stdio.h>[m[K’?
+[01m[Klinear-search.c:10:11:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: linear-search.o] Error 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ make
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+[01m[Klinear-search.c:[m[K In function ‘[01m[Ksearch_for_element[m[K’:
+[01m[Klinear-search.c:9:26:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   if(a==NULL || nElements[01;35m[K==[m[KNULL || element==NULL || nElements<0){
+                          [01;35m[K^~[m[K
+[01m[Klinear-search.c:9:43:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   if(a==NULL || nElements==NULL || element[01;35m[K==[m[KNULL || nElements<0){
+                                           [01;35m[K^~[m[K
+cc   linear-search.o main.o int_compare.o   -o linear-search
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ make
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+cc   linear-search.o main.o int_compare.o   -o linear-search
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ maketime ./binary-search 2000 2000[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clinear-se[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./linear-search [9P100 1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./linear-search 100 1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit binary-search.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clinear-sea[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd int-searchls[Kcd ..[3Plscd int-searchls[Kgedit linear-search.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbinary-sea[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./linear-search 100 1
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/int-search$ cd ..
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ cd coverage
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ ls
+coverage.c  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ amke[K[K[K[Kmake
+cc -g -Wall -std=c11 -fprofile-arcs -ftest-coverage    coverage.c   -o coverage
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ ls
+coverage  coverage.c  coverage.gcno  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ ./coverage 200 20 0 2999
+
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ ls
+coverage  coverage.c  coverage.gcda  coverage.gcno  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ gcov vo[K[Kcoverage.gcd a
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ ls
+coverage  coverage.c  coverage.c.gcov  coverage.gcda  coverage.gcno  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ gedit coverage.c. gcov
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ fw[K[Kgei[Kd[Kdir[Kt coverage.c
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ gcov [K[K[K[K[Kls
+coverage  coverage.c  coverage.c.gcov  coverage.gcda  coverage.gcno  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ ,[K./coverage 200 20 00 2999
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ ls
+coverage  coverage.c  coverage.c.gcov  coverage.gcda  coverage.gcno  Makefile
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ gcov covergage[K[K[K[Kage.gcd a
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ gedit coverage.c. gcov
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ gcedit coverage.c.gcov[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccov coverage.gcda[K
+coverage.c:source file is newer than notes file 'coverage.gcno'
+(the message is displayed only once per source file)
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ gcov coverage.gcda[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cedit coverage.c.gcov
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ gedit coverage.c.gcov
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11/coverage$ cd ..
+[1]+  Done                    gedit lab11_output.txt
+rimai1@g7-25:/import/linux/home1/rimai1/git-repos/i220b/work/lab11$ exit
+
+Script done on 2019-10-31 16:50:43-04:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,20 @@
+arguments passing:
+rdi, rsi, rdx, rcx, r8, r9 
+
+//registers are in cpu, but need (stack)memory because size of cpu is limited.
+
+
+//for(a,b,c,d,e,f,g,h) then
+register: rdi = a
+	  rsi = b 
+          .
+	  .
+	  .
+          r9  = f
+
+stack:    h
+	  g
+         -----(rsp)
+
+--------------------------------------------------------------------------------
+
