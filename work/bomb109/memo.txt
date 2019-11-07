@@ -1,0 +1,55 @@
+COLUMN ONE: the symbol's value
+
+COLUMN TWO: a set of characters and spaces indicating the flag bits that are set on the symbol. There are seven groupings which are listed below:
+
+group one: (l,g,,!) local, global, neither, both.
+
+group two: (w,) weak or strong symbol.
+
+group three: (C,) symbol denotes a constructor or an ordinary symbol.
+
+group four: (W,) symbol is warning or normal symbol.
+
+group five: (I,) indirect reference to another symbol or normal symbol.
+
+group six: (d,D,) debugging symbol, dynamic symbol or normal symbol.
+
+group seven: (F,f,O,) symbol is the name of function, file, object or normal symbol.
+
+COLUMN THREE: the section in which the symbol lives, ABS means not associated with a certain section
+
+COLUMN FOUR: the symbol's size or alignment.
+
+COLUMN FIVE: the symbol's name.
+
+//this is for objdump -t
+--------------------------------------------------------------------------
+
+objdump -t [filename] > [newfilename].objdump
+
+//it makes new objdump file.
+
+
+objdump -d [filename] | grep -A[line#] [functoin].:
+
+//it shows # lines from [function]
+
+
+
+
+
+first, analyze the assembles and name functions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

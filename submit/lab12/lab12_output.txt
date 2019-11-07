@@ -1,0 +1,70 @@
+ex1.
+
+1.  
+ls *[$]*
+'1$2'  'a$b'
+
+
+2.
+ls *["'"]*
+"'12"  "a'b"
+
+
+3.
+ls *['\']*
+'\\ab'
+
+
+4.
+ls -- ??
+'**'   -l
+
+
+------------------------------------------------------
+ex5.
+
+find ~/git-repos/cs220/projects -name '*.[ch]'
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/bits-to-ints.c
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/bits-to-ints.h
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/errors.c
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/errors.h
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/main.c
+/home/rimai1/git-repos/cs220/projects/prj1-sol/bits-to-ints.c
+/home/rimai1/git-repos/cs220/projects/prj1-sol/bits-to-ints.h
+/home/rimai1/git-repos/cs220/projects/prj1-sol/errors.c
+/home/rimai1/git-repos/cs220/projects/prj1-sol/errors.h
+/home/rimai1/git-repos/cs220/projects/prj1-sol/main.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/big-bits.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/big-bits.h
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/errors.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/errors.h
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/hex-util.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/hex-util.h
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/main.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/stack.h
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/stack.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/alt-big-bits.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/big-bits.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/big-bits.h
+/home/rimai1/git-repos/cs220/projects/prj2-sol/errors.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/errors.h
+/home/rimai1/git-repos/cs220/projects/prj2-sol/hex-util.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/hex-util.h
+/home/rimai1/git-repos/cs220/projects/prj2-sol/main.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/stack.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/stack.h
+
+
+rimai1@g7-25:~$ find ~/git-repos/cs220/projects -name '*.[ch]' | wc -l
+29
+
+
+
+------------------------------------------------------
+ex6.
+
+sleep 5; echo 123
+123
+
+
+------------------------------------------------------
