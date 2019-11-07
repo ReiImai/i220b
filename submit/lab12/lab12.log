@@ -23987,4 +23987,168 @@ rimai1@g7-25:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]' 
 
 
 
-^C/home/rimai1/git-repos/cs220/projects/prj1/prj1-so
+^C/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/rimai1/git-repos/cs220/projects/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/main.c:main()
+/home/rimai1/git-repos/cs220/projects/prj2-sol/main.c:main()
+rimai1@g7-25:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]' ; wc -l`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgrep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]' ; wc -l`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+rimai1@g7-25:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]' ; wc -l`[1Pl`[C[1P`[1P`[1P`[1P`[1P`[1P`[1P`
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/rimai1/git-repos/cs220/projects/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/main.c:main()
+/home/rimai1/git-repos/cs220/projects/prj2-sol/main.c:main()
+rimai1@g7-25:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]'` ; wc -;[Ka[Kl
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/rimai1/git-repos/cs220/projects/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/main.c:main()
+/home/rimai1/git-repos/cs220/projects/prj2-sol/main.c:main()
+\
+^C
+rimai1@g7-25:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]'` ; wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgrep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]'` ; wc -l[1P[1@|[C[1@ 
+4
+rimai1@g7-25:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]'` |  wc -l[C[K[K[K[K[K[K[K[K[K|`[1P` `|` `w`c` `-`l`
+grep: 29: No such file or directory
+rimai1@g7-25:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]' | wc -l`[K[K[K[K[K[K[K[K[K~[K`[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | wc -;[Kl
+0
+rimai1@g7-25:~$ grep -i `find ~/git-repos/cs220/projects -name '*.[ch]'` | wc -l[K[K[K[K[K[K[K[K
+rimai1@g7-25:~$ grep -i `find ~/git-repos/cs220/projects -name '*.[ch]'` | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]' | wc -l`[1P`[1P`[1P`[1P`[1P`[1P`[1P`[1P`
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/rimai1/git-repos/cs220/projects/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/main.c:main()
+/home/rimai1/git-repos/cs220/projects/prj2-sol/main.c:main()
+rimai1@g7-25:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]'`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C a[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; wc -l
+
+^C
+rimai1@g7-25:~$ find ~/git-repos/cs2320[K[K[K20/projects.[K 9[K-name '*,[K.[ch]' [K
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/bits-to-ints.c
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/bits-to-ints.h
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/errors.c
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/errors.h
+/home/rimai1/git-repos/cs220/projects/prj1/prj1-sol/main.c
+/home/rimai1/git-repos/cs220/projects/prj1-sol/bits-to-ints.c
+/home/rimai1/git-repos/cs220/projects/prj1-sol/bits-to-ints.h
+/home/rimai1/git-repos/cs220/projects/prj1-sol/errors.c
+/home/rimai1/git-repos/cs220/projects/prj1-sol/errors.h
+/home/rimai1/git-repos/cs220/projects/prj1-sol/main.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/big-bits.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/big-bits.h
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/errors.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/errors.h
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/hex-util.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/hex-util.h
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/main.c
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/stack.h
+/home/rimai1/git-repos/cs220/projects/prj2/prj2-sol/stack.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/alt-big-bits.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/big-bits.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/big-bits.h
+/home/rimai1/git-repos/cs220/projects/prj2-sol/errors.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/errors.h
+/home/rimai1/git-repos/cs220/projects/prj2-sol/hex-util.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/hex-util.h
+/home/rimai1/git-repos/cs220/projects/prj2-sol/main.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/stack.c
+/home/rimai1/git-repos/cs220/projects/prj2-sol/stack.h
+rimai1@g7-25:~$ x[Kc[K [Kfind ~/git-repos/cs220/projects -name '*.[ch]' | wc -l
+29
+rimai1@g7-25:~$ wcho[K[K[K[Kecho $?
+0
+rimai1@g7-25:~$ false; echo 123
+123
+rimai1@g7-25:~$ true ;[K[K; echo1 [K[K 123
+123
+rimai1@g7-25:~$ fale[Kse && echo 123
+rimai1@g7-25:~$ true && echo1[K 123
+123
+rimai1@g7-25:~$ false || echo 123
+123
+rimai1@g7-25:~$ true \\ [K[K[K|| echo 123
+rimai1@g7-25:~$ slee[ [K[K [Kp 54[K ;[K[K; echo 123
+123
+rimai1@g7-25:~$  [Kcd gitep[K[K-repos/i220b.[K/work
+[1]+  Done                    gedit lab12_output.txt  (wd: /import/linux/home1/rimai1/git-repos/i220b/work/lab12)
+(wd now: ~/git-repos/i220b/work)
+rimai1@g7-25:~/git-repos/i220b/work$ ls[K[Kcd [K[K[Kls
+bomb109  bomb109.tar  lab12  prj1-sol  prj2-sol
+rimai1@g7-25:~/git-repos/i220b/work$ cd [K[K[Kcd ..
+rimai1@g7-25:~/git-repos/i220b$ mv work/lab12 submit
+rimai1@g7-25:~/git-repos/i220b$ ls
+README.md  submit  work
+rimai1@g7-25:~/git-repos/i220b$ cd submite[K
+rimai1@g7-25:~/git-repos/i220b/submit$ ks[K[Kls
+lab1  lab10  lab11  lab12  lab2  lab3  lab4  lab5  lab6  lab7  lab8  lab9
+rimai1@g7-25:~/git-repos/i220b/submit$ dcd[K[K[Ki[Kgit add -a[KA
+rimai1@g7-25:~/git-repos/i220b/submit$ git commit- [K[K -m ""s"u"b"m"i"t"t"e"d" "l"a"b" "1"2"
+[master a4d2d96] submitted lab 12
+ Committer: Rei Imai <rimai1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 16 files changed, 69033 insertions(+)
+ create mode 100644 submit/lab12/lab12.log
+ create mode 100644 submit/lab12/lab12_output.txt
+ create mode 100644 submit/lab12/quote-files/'12
+ create mode 100644 submit/lab12/quote-files/**
+ create mode 100644 submit/lab12/quote-files/-l
+ create mode 100644 "submit/lab12/quote-files/1\"2"
+ create mode 100644 submit/lab12/quote-files/1$2
+ create mode 100644 "submit/lab12/quote-files/\\\\ab"
+ create mode 100644 "submit/lab12/quote-files/a\"b"
+ create mode 100644 submit/lab12/quote-files/a$b
+ create mode 100644 submit/lab12/quote-files/a'b
+ create mode 100644 submit/lab12/quote-files/c-files.lst
+ create mode 100644 work/bomb109/bombd.objdump
+ create mode 100644 work/bomb109/bombt.objdump
+ create mode 100644 work/bomb109/memo.txt
+ create mode 100644 work/bomb109/psol.txt
+rimai1@g7-25:~/git-repos/i220b/submit$ git push
+Username for 'https://github.com': rimai1
+Password for 'https://rimai1@github.com': 
+To https://github.com/rimai1/i220b.git
+ [31m! [rejected]       [m master -> master (fetch first)
+[31merror: failed to push some refs to 'https://github.com/rimai1/i220b.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+rimai1@g7-25:~/git-repos/i220b/submit$ cd ..[K[K[K[K[Kgit pull
+remote: Enumerating objects: 9, done.[K
+remote: Counting objects:  11% (1/9)[Kremote: Counting objects:  22% (2/9)[Kremote: Counting objects:  33% (3/9)[Kremote: Counting objects:  44% (4/9)[Kremote: Counting objects:  55% (5/9)[Kremote: Counting objects:  66% (6/9)[Kremote: Counting objects:  77% (7/9)[Kremote: Counting objects:  88% (8/9)[Kremote: Counting objects: 100% (9/9)[Kremote: Counting objects: 100% (9/9), done.[K
+remote: Compressing objects:  20% (1/5)[Kremote: Compressing objects:  40% (2/5)[Kremote: Compressing objects:  60% (3/5)[Kremote: Compressing objects:  80% (4/5)[Kremote: Compressing objects: 100% (5/5)[Kremote: Compressing objects: 100% (5/5), done.[K
+remote: Total 5 (delta 4), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  20% (1/5)   Unpacking objects:  40% (2/5)   Unpacking objects:  60% (3/5)   Unpacking objects:  80% (4/5)   Unpacking objects: 100% (5/5)   Unpacking objects: 100% (5/5), done.
+From https://github.com/rimai1/i220b
+   a5e8b67..d80d525  master     -> origin/master
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;23r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[23;1H"~/git-repos/i220b/.git/MERGE_MSG" 7L, 284C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130mMerge branch 'master' of https://github.com/rimai1[m/i220b
+
+[34m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                             [9;1H~                                                                                             [10;1H~                                                                                             [11;1H~                                                                                             [12;1H~                                                                                             [13;1H~                                                                                             [14;1H~                                                                                             [15;1H~                                                                                             [16;1H~                                                                                             [17;1H~                                                                                             [18;1H~                                                                                             [19;1H~                                                                                             [20;1H~                                                                                             [21;1H~                                                                                             [22;1H~                                                                                             [m[23;77H1,1[11CAll]2;MERGE_MSG (~/git-repos/i220b/.git) - VIM]1;MERGE_MSG[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of https://github.com/rimai1[m/i220b
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                             [9;1H~                                                                                             [10;1H~                                                                                             [11;1H~                                                                                             [12;1H~                                                                                             [13;1H~                                                                                             [14;1H~                                                                                             [15;1H~                                                                                             [16;1H~                                                                                             [17;1H~                                                                                             [18;1H~                                                                                             [19;1H~                                                                                             [20;1H~                                                                                             [21;1H~                                                                                             [22;1H~                                                                                             [m[23;77H1,1[11CAll"~/git-repos/i220b/.git/MERGE_MSG" 7L, 284C[1;1H[?25h[?25l[23;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[23;77H[K[23;77H1,1[11CAll[1;1H[?25h[?25l[23;67H~@k[1;1H[23;67H   [1;1H[?25h[?25l[23;67H~@k[1;1H[23;67H   [1;1H[?25h[?25l[23;67H~@k[1;1H[23;67H   [1;1H[?25h[?25l[23;67H^V[1;1H[23;67H1x1[1;1H[23;1H[1m-- VISUAL BLOCK --[m[23;19H[K[23;67H1x1[1;1H[23;77H1,1[11CAll[1;1H[?25h[?25l[23;67H~@k[1;1H[23;67H1x1[1;1H[?25h[?25l[23;67H~@k[1;1H[23;67H1x1[1;1H[?25h[?25l[23;67H~@k[1;1H[23;67H1x1[1;1H[?25h[?25l[23;67H   [1;1H[23;1H[K[23;77H1,1[11CAll[1;1H[?25h[?25l[23;67H^M[1;1H[23;67H  [2;1H[23;77H2,0-1[2;1H[?25h[?25l[23;67H~@k[2;1H[23;67H   [1;56H[23;77H1,56 [1;56H[?25h[?25l[23;67H^V[1;56H[23;67H1x1[1;56H[23;1H[1m-- VISUAL BLOCK --[m[23;67H[K[23;67H1x1[1;56H[23;77H1,56[10CAll[1;56H[?25h[?25l[23;67H^V [1;56H[23;67H  [1;56H[23;1H[K[23;77H1,56[10CAll[1;56H[?25h[?25l[23;67H~@k[1;56H[23;67H   [1;55H[23;80H5[1;55H[?25h[?25l[23;67H~@k[1;55H[23;67H   [1;54H[23;80H4[1;54H[?25h[?25l[23;67H~@k[1;54H[23;67H   [1;53H[23;80H3[1;53H[?25h[?25l[23;77H2,0-1[2;1H[?25h[?25l[23;67HZ[2;1H[?25h[?25l[23;68HZ[2;1H[23;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[23;67H[K[23;1H[?2004l[?1l>[?25h[?1049l[23;0;0t[KMerge made by the 'recursive' strategy.
+ submit/lab11/lab11.log | 177 [32m+++++++++++++++++++++++++++++++[m[31m--------------------------------[m
+ 1 file changed, 86 insertions(+), 91 deletions(-)
+rimai1@g7-25:~/git-repos/i220b/submit$ c[Kc [K[Kcd ..[K[K[K[K[Kcd .[K[K[K[Kcd .[K[K[K[Kcd [K[K[Kcd lab12
+rimai1@g7-25:~/git-repos/i220b/submit/lab12$ ls
+lab12.log  lab12_output.txt  quote-files
+rimai1@g7-25:~/git-repos/i220b/submit/lab12$ exit
+
+Script done on 2019-11-07 16:17:02-05:00 [COMMAND_EXIT_CODE="0"]
