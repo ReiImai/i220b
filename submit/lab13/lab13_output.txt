@@ -1,0 +1,41 @@
+ex1.
+
+./stdin-char-count <stdin-char-count.c
+EOF = -1
+205
+
+wc stdin-char-count.c
+ 12  32 205 stdin-char-count.c
+
+
+//compare unsigned char with negative value always false
+//so make char into singned.
+
+________________________________________________________
+ex2.
+
+
+need to release the allocating memory.
+
+
+
+________________________________________________________
+ex3.
+
+
+
+
+________________________________________________________
+ex4.
+
+
+
+
+
+
+
+
+
+
+
+
